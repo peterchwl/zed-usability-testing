@@ -25,7 +25,7 @@ for filename in os.listdir("zeek-ndjson"):
     f = gzip.open(os.path.join("zeek-ndjson", filename))
     for l in f:
         rand = random.randint(0,100)
-        if rand <= percent_of_db:
+        if rand <= percent_of_db * 100:
             currDataset.append(json.loads(l))
     dataset += currDataset
 
