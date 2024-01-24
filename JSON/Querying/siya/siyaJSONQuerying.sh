@@ -1,48 +1,40 @@
 #!/bin/bash
 
-HOMOFILE="../../../JSON/Ingesting/siya/siya_homo_data.ndjson"
-#HETEROFILE="../../../DataSet/heterogeneous.ndjson"
-HETEROFILE="../../../JSON/Ingesting/siya/siya_hetero_data.ndjson"
 
-echo "Homogeneous"
+while true; do
+  echo -n "Enter your type of file (homo/hetero): "
+  read typeoffile
+
+  if [ "$typeoffile" == "homo" ]; then
+    FILE="../../../JSON/Ingesting/siya/siya_homo_data.ndjson"
+    echo "You chose homo."
+    break
+  elif [ "$typeoffile" == "hetero" ]; then
+    FILE="../../../JSON/Ingesting/siya/siya_hetero_data.ndjson"
+    echo "You chose hetero."
+    break
+  else
+    echo "Invalid input. Please enter 'homo' or 'hetero'."
+  fi
+done
+
 echo "Search query 1"
-jq 'select(.uid=="CaKOs227hSLbREtxq8")' $HOMOFILE > "homogeneous_results/search1.txt"
+jq 'select(.ts=="2018-03-24T17:15:21.196410Z")' $FILE > $typeoffile"geneous_results/search1.txt"
 
 echo "Search query 2"
-jq 'select(._path=="ssl")' $HOMOFILE > "homogeneous_results/search2.txt"
+jq 'select(._path=="http")' $FILE > $typeoffile"geneous_results/search2.txt"
 
 echo "Search query 3"
-jq 'select(.uid=="CaKOs227hSLbREtxq8")' $HOMOFILE > "homogeneous_results/search3.txt"
+jq 'select(.status_code==404)' $FILE > $typeoffile"geneous_results/search3.txt"
 
 echo "Analytical query 1"
-jq '._path' $HOMOFILE | sort -u > "homogeneous_results/analytical1.txt"
+jq '._path' $FILE | sort -u > $typeoffile"geneous_results/analytical1.txt"
 
 echo "Analytical query 2"
-jq 'select(.proto=="tcp") ' $HOMOFILE >  "homogeneous_results/analytical2.txt"
+jq 'select(."id.resp_p"!=null) ' $FILE >  $typeoffile"geneous_results/analytical2.txt"
 
 echo "Analytical query 3"
-jq -s 'map(.response_body_len) | add/length' $HOMOFILE  > "homogeneous_results/analytical3.txt"
+jq -s 'map(.response_body_len) | add/length' $FILE  > $typeoffile"geneous_results/analytical3.txt"
 
 
-
-echo "_________________________________________________________"
-
-echo "Heterogeneous"
-echo "Search query 1"
-jq 'select(.uid=="CaKOs227hSLbREtxq8")' $HETEROFILE > "heterogeneous_results/search1.txt"
-
-echo "Search query 2"
-jq 'select(._path=="ssl")' $HETEROFILE > "heterogeneous_results/search2.txt"
-
-echo "Search query 3"
-jq 'select(.uid=="CaKOs227hSLbREtxq8")' $HETEROFILE > "heterogeneous_results/search3.txt"
-
-echo "Analytical query 1"
-jq '._path' $HETEROFILE | sort -u >  "heterogeneous_results/analytical1.txt"
-
-echo "Analytical query 2"
-jq 'select(.proto=="tcp")' $HETEROFILE > "heterogeneous_results/analytical2.txt"
-
-echo "Analytical query 3"
-jq -s 'map(.response_body_len) | add/length' $HETEROFILE  > "heterogeneous_results/analytical3.txt"
 
