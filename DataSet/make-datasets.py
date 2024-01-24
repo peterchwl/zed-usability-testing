@@ -13,7 +13,14 @@ with open("homogeneous.ndjson", "w", encoding="utf-8") as f:
         json.dump(dataset[i], f)
         f.write('\n')
         
+with open("homogeneous_half.ndjson", "w", encoding="utf-8") as f:
+    for i in range(len(dataset)//2):
+        json.dump(dataset[i], f)
+        f.write('\n')
+        
 print("Size of homogeneous file: " + str(len(dataset)) + " records.")
+print("Size of homogeneous half file: " + str(len(dataset)//2) + " records.")
+
 ## create heterogeneous set
 total_records = 1462078
 percent_of_db = len(dataset) / total_records
@@ -34,4 +41,10 @@ with open("heterogeneous.ndjson", "w") as f:
         json.dump(dataset[i], f)
         f.write('\n')
 
+with open("heterogeneous_half.ndjson", "w") as f:
+    for i in range(len(dataset)//2):
+        json.dump(dataset[i], f)
+        f.write('\n')
+
 print("Size of heterogeneous file: " + str(len(dataset)) + " records.")
+print("Size of heterogeneous half file: " + str(len(dataset)//2) + " records.")
