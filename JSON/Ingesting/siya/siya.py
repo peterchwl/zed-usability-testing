@@ -2,6 +2,9 @@ import json
 hetero_file="../../../DataSet/heterogeneous.ndjson"
 homo_file="../../../DataSet/homogeneous.ndjson"
 
+homo_file_half="../../../DataSet/homogeneous_half.ndjson"
+hetero_file_half="../../../DataSet/heterogeneous_half.ndjson"
+
 with open(homo_file, "r") as f:
     #save it line by line
     data = [json.loads(l) for l in f.readlines()]
