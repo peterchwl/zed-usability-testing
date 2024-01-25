@@ -1,17 +1,19 @@
 import gzip
 import json
 import os
+import sys
 
-## homoegenous pipeline
+file = input("File: ")
+if file != "homogeneous" and file != "heterogeneous":
+    print("Please enter a valid file")
+    sys.exit()
+
 dataset = []
-with open("homogeneous.json", "r") as f:
-    dataset = json.load(f)
-with open("test-homogeneous.json", "w") as f:
-    json.dump(dataset, f)
-    
-## heterogeneous pipeline
-dataset = []
-with open("heterogeneous.json", "r") as f:
-    dataset = json.load(f)
-with open("test-heterogeneous.json", "w") as f:
-    json.dump(dataset, f)
+with open(str(file) + ".ndjson", "r") as f:
+    for l in f:
+        dataset.append(json.loads(l))
+     
+with open("./database/test-" + str(file) + ".ndjson", "w") as f:
+    for i in range(len(dataset)):
+        json.dump(dataset[i], f)
+        f.write('\n')
