@@ -7,11 +7,11 @@ while true; do
 
   if [ "$typeoffile" == "homo" ]; then
     FILE="../../../JSON/Ingesting/siya/siya_homo_data.ndjson"
-    echo "You chose homo."
+    echo "You chose homogeneous."
     break
   elif [ "$typeoffile" == "hetero" ]; then
     FILE="../../../JSON/Ingesting/siya/siya_hetero_data.ndjson"
-    echo "You chose hetero."
+    echo "You chose heterogeneous."
     break
   else
     echo "Invalid input. Please enter 'homo' or 'hetero'."
