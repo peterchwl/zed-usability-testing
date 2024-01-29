@@ -31,7 +31,7 @@ echo "Analytical query 1"
 jq -r '._path' $FILE | sort -u > $typeoffile"geneous_results/analytical1.txt"
 
 echo "Analytical query 2" 
-cat $FILE | jq -r 'select(.["_path"] != null) | .["_path"]' | sort | uniq -c | awk '{print $2, $1}' > $typeoffile"geneous_results/analytical2.txt"
+jq -r 'select(.["_path"] != null) | .["_path"]' $FILE | sort | uniq -c | awk '{print $2, $1}' > $typeoffile"geneous_results/analytical2.txt"
 
 echo "Analytical query 3"
 jq -c -s 'map(.response_body_len) | add/length' $FILE  > $typeoffile"geneous_results/analytical3.txt"
