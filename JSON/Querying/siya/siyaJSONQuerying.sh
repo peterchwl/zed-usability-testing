@@ -31,10 +31,10 @@ echo "Analytical query 1"
 jq '._path' $FILE | sort -u > $typeoffile"geneous_results/analytical1.txt"
 
 echo "Analytical query 2" 
-jq 'select(.["_path"] != null) | .["_path"]' $FILE | sort | uniq -c | awk '{print $2, $1}' > $typeoffile"geneous_results/analytical2.txt"
+jq 'select(.["_path"] != null) | .["_path"]' $FILE | sort | uniq -c  > $typeoffile"geneous_results/analytical2.txt"
 
 echo "Analytical query 3"
-jq -s 'map(.response_body_len) | add/length' $FILE  > $typeoffile"geneous_results/analytical3.txt"
+jq -s 'map(select(.response_body_len != null).response_body_len) | add/length' $FILE > $typeoffile"geneous_results/analytical3.txt"
 
 
 

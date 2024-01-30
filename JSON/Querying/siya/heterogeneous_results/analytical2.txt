@@ -1,23 +1,23 @@
-"conn" 100873
-"dce_rpc" 5
-"dns" 5281
-"dpd" 2
-"files" 16233
-"ftp" 10
-"http" 14070
-"kerberos" 4
-"modbus" 12
-"notice" 7
-"ntlm" 58
-"ntp" 79
-"pe" 2
-"rdp" 425
-"smb_files" 2
-"smb_mapping" 28
-"smtp" 124
-"snmp" 4
-"ssh" 2
-"ssl" 3503
-"syslog" 240
-"weird" 2267
-"x509" 936
+100873 "conn"
+   5 "dce_rpc"
+5281 "dns"
+   2 "dpd"
+16233 "files"
+  10 "ftp"
+14070 "http"
+   4 "kerberos"
+  12 "modbus"
+   7 "notice"
+  58 "ntlm"
+  79 "ntp"
+   2 "pe"
+ 425 "rdp"
+   2 "smb_files"
+  28 "smb_mapping"
+ 124 "smtp"
+   4 "snmp"
+   2 "ssh"
+3503 "ssl"
+ 240 "syslog"
+2267 "weird"
+ 936 "x509"
