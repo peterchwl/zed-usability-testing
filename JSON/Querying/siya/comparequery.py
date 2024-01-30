@@ -1,6 +1,8 @@
 import json
 from difflib import unified_diff
 
+print("This file does not work")
+
 def read_ndjson(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         lines = file.readlines()
