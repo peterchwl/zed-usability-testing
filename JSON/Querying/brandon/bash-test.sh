@@ -1,7 +1,7 @@
 FILE="../../../JSON/Ingesting/brandon/homogeneous-full.ndjson"
 echo "Homogeneous Query Test" 
 echo "Search Query #1" 
-jq 'select(.ts=="2018-03-24T17:15:20.724520Z")' $FILE > homogeneous/search1.txt
+jq 'select(.ts=="2018-03-24T17:15:21.196410Z")' $FILE > homogeneous/search1.txt
 echo "Search Query #2" 
 jq 'select(._path=="http")' $FILE > homogeneous/search2.txt
 
@@ -14,7 +14,7 @@ jq -s 'map(._path) | unique' $FILE > homogeneous/analy1.txt
 
 
 echo "Analytical Query #2" 
-jq -r '._path' $FILE |sort|uniq -c |perl -lane 'print "$F[1] $F[0]"' $FILE > homogeneous/analy2.txt
+jq -r '._path' $FILE |sort|uniq -c |perl -lane 'print "$F[1] $F[0]"' > homogeneous/analy2.txt
 
 echo "Analytical Query #3" 
 jq -s 'map(.response_body_len)|add/length' $FILE > homogeneous/analy3.txt
@@ -22,7 +22,7 @@ jq -s 'map(.response_body_len)|add/length' $FILE > homogeneous/analy3.txt
 FILE="../../../JSON/Ingesting/brandon/heterogeneous-full.ndjson"
 echo "Heterogeneous Query Test" 
 echo "Search Query #1" 
-jq 'select(.ts=="2018-03-24T17:15:20.724520Z")' $FILE > heterogeneous/search1.txt
+jq 'select(.ts=="2018-03-24T17:15:21.196410Z")' $FILE > heterogeneous/search1.txt
 echo "Search Query #2" 
 jq 'select(._path=="http")' $FILE > heterogeneous/search2.txt
 
@@ -35,7 +35,7 @@ jq -s 'map(._path) | unique' $FILE > heterogeneous/analy1.txt
 
 echo "Analytical Query #2" 
 #  jq -s 'map(select(._path=="http"))|length' $FILE
-jq -r '._path' $FILE |sort|uniq -c |perl -lane 'print "$F[1] $F[0]"' $FILE > heterogeneous/analy2.txt
+jq -r '._path' $FILE |sort|uniq -c |perl -lane 'print "$F[1] $F[0]"' > heterogeneous/analy2.txt
 #  jq 'select(."_path" !=null)|."_path"' Query\ Tests/heterogeneous.ndjson |sort|uniq -c|awk '{print $2, $1}'
 #  jq 'select(._path)|._path' Query\ Tests/heterogeneous.ndjson |uniq -c|awk '{print $2, $1}'
 #  jq 'select(._path).["_path"]' Query\ Tests/heterogeneous.ndjson |uniq -c|awk '{print $2, $1}'
@@ -43,4 +43,4 @@ jq -r '._path' $FILE |sort|uniq -c |perl -lane 'print "$F[1] $F[0]"' $FILE > het
 #  jq 'select(._path).["_path"]' Query\ Tests/heterogeneous.ndjson |uniq -c|perl -lane 'print "$F[1] $F[0]"'
 #  jq -r '._path' Query\ Tests/heterogeneous.ndjson |sort|uniq -c |perl -lane 'print "$F[1] $F[0]"'
 echo "Analytical Query #3" 
-jq -s 'map(.response_body_len)|add/length' $FILE > heterogeneous/analy3.txt
+jq -s 'map(select(.response_body_len!=null).response_body_len)|add/length' $FILE > heterogeneous/analy3.txt
