@@ -16,7 +16,7 @@ def load_everything(path):
     print(f'File Object Size: {len(data_list)}')
 
 
-path = "../Query Tests/homogeneous.ndjson"
+path = "../../../DataSet/homogeneous.ndjson"
 load_everything(path)
 half = len(data_list) // 2
 
@@ -78,14 +78,14 @@ def ingestion_tester(path):
 
 
 print('Homogeneous-Half')
-path = "../Query Tests/homogeneous.ndjson"
+path = "../../../DataSet/homogeneous.ndjson"
 load_everything(path)
 half = len(data_list) // 2
 path = "homogeneous-half.ndjson"
 ingestion_tester(path)
 
 print('Heterogeneous-Half')
-path = "../Query Tests/heterogeneous.ndjson"
+path = "../../../DataSet/heterogeneous.ndjson"
 load_everything(path)
 half = len(data_list) // 2
 path = "heterogeneous-half.ndjson"
@@ -93,14 +93,14 @@ ingestion_tester(path)
 
 # Dump results
 print('Heterogeneous-Full')
-path = "../Query Tests/heterogeneous.ndjson"
+path = "../../../DataSet/heterogeneous.ndjson"
 load_everything(path)
 half = len(data_list)
 path = "heterogeneous-full.ndjson"
 ingestion_tester(path)
 
 print('Homogeneous-Full')
-path = "../Query Tests/homogeneous.ndjson"
+path = "../../../DataSet/homogeneous.ndjson"
 load_everything(path)
 half = len(data_list)
 path = "homogeneous-full.ndjson"
