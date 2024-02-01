@@ -7,7 +7,8 @@ jq 'select(._path=="http")' $FILE > homogeneous/search2.txt
 
 # work on this
 echo "Search Query #3" 
-jq 'select(.uid=="CtjiRy1Vg3BeSeMNo1")' $FILE > homogeneous/search3.txt
+#  jq 'select(."id.orig_h" =="10.47.5.155")' $FILE > homogeneous/search3.txt
+jq 'select(.[]| tostring | contains("10.47.5.155"))' $FILE > homogeneous/search3.txt
 
 echo "Analytical Query #1" 
 jq -s 'map(._path) | unique' $FILE > homogeneous/analy1.txt
@@ -28,7 +29,7 @@ jq 'select(._path=="http")' $FILE > heterogeneous/search2.txt
 
 #work on this one
 echo "Search Query #3" 
-jq 'select(.uid == "FWEbQU2hjPd6qmioAc" or .fuid == "FWEbQU2hjPd6qmioAc" or .id =="FWEbQU2hjPd6qmioAc")' $FILE > heterogeneous/search3.txt
+jq 'select(.[]| tostring | contains("10.47.5.155"))'  $FILE > heterogeneous/search3.txt
 
 echo "Analytical Query #1" 
 jq -s 'map(._path) | unique' $FILE > heterogeneous/analy1.txt
