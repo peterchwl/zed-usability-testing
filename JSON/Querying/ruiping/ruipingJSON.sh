@@ -33,4 +33,4 @@ echo "Analytical Query 2 Done"
 jq -r 'select(.["_path"] != null) | .["_path"]' $FILE_PATH | sort | uniq -c | sort -k2,2 | awk '{print $2, $1}' > "$FILE_OUTPUT/${input}_results/analytical_query2.txt"
 
 echo "Analytical Query 3 Done"
-jq -s 'map(.response_body_len) | add / length' "$FILE_PATH" > "$FILE_OUTPUT/${input}_results/analytical_query3.txt"
+jq -s 'map(select(.response_body_len != null).response_body_len) | add/length' "$FILE_PATH" > "$FILE_OUTPUT/${input}_results/analytical_query3.txt"
