@@ -25,7 +25,8 @@ echo "Search query 2"
 jq 'select(._path=="http")' $FILE > $typeoffile"geneous_results/search2.txt"
 
 echo "Search query 3"
-jq 'select(."id.orig_h"=="10.47.5.155")' $FILE > $typeoffile"geneous_results/search3.txt"
+#jq 'select(."id.orig_h"=="10.47.5.155")' $FILE > $typeoffile"geneous_results/search3.txt"
+jq 'select(.[]| tostring | contains("10.47.5.155"))' $FILE > $typeoffile"geneous_results/search3.txt"
 
 echo "Analytical query 1"
 jq '._path' $FILE | sort -u > $typeoffile"geneous_results/analytical1.txt"

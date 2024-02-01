@@ -11829,6 +11829,27 @@
 }
 {
   "_path": "conn",
+  "_write_ts": "2018-03-24T17:34:52.944978Z",
+  "ts": "2018-03-24T17:34:47.944728Z",
+  "uid": "CBYsoa2tfLtgq4XItf",
+  "id.orig_h": "10.128.0.213",
+  "id.orig_p": 49813,
+  "id.resp_h": "10.47.5.155",
+  "id.resp_p": 80,
+  "proto": "tcp",
+  "duration": 0.0000040531158447265625,
+  "orig_bytes": 0,
+  "resp_bytes": 0,
+  "conn_state": "S0",
+  "missed_bytes": 0,
+  "history": "S",
+  "orig_pkts": 2,
+  "orig_ip_bytes": 128,
+  "resp_pkts": 0,
+  "resp_ip_bytes": 0
+}
+{
+  "_path": "conn",
   "_write_ts": "2018-03-24T17:34:56.808171Z",
   "ts": "2018-03-24T17:34:46.807865Z",
   "uid": "CxNTmg1TkuWEEpEOWj",
@@ -16121,4 +16142,3532 @@
   "request_body_len": 0,
   "response_body_len": 0,
   "tags": []
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:23.636501Z",
+  "ts": "2018-03-24T17:15:23.621906Z",
+  "fuid": "FQyqXZ11BCRUWjOTui",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.01459503173828125,
+  "is_orig": false,
+  "seen_bytes": 234422,
+  "total_bytes": 234422,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "e709e588f41be2f59149374a1eb6c9cb",
+  "sha1": "9e6ba3e50a6c31115670270c85ba09312f85705c"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:23.784974Z",
+  "ts": "2018-03-24T17:15:23.784967Z",
+  "fuid": "FvJHPD2hPK8Ekdj8O9",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.000007152557373046875,
+  "is_orig": false,
+  "seen_bytes": 2998,
+  "total_bytes": 2998,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "808c9aaf71e517727f104b6605ed0a3c",
+  "sha1": "67ec5137c2750da85e09581cbab8408e4a0a601e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:24.789863Z",
+  "ts": "2018-03-24T17:15:24.751518Z",
+  "fuid": "FMVjKa2BkeRRnmGRDd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0383450984954834,
+  "is_orig": false,
+  "seen_bytes": 435628,
+  "total_bytes": 435628,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "56717d801e571e2aa648e64813ebd197",
+  "sha1": "36acdc66d863421043fdbfc85266a265a2883746"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:25.340236Z",
+  "ts": "2018-03-24T17:15:25.080514Z",
+  "fuid": "FrZqFp4omHchmNAh1a",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.2597219944000244,
+  "is_orig": false,
+  "seen_bytes": 3055650,
+  "total_bytes": 3055650,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "5cb9d4644437e14c2ddc9005a40f3687",
+  "sha1": "8f2540ddc8a5187f50fc025eab25eec9f23c84c2"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:25.508562Z",
+  "ts": "2018-03-24T17:15:25.507614Z",
+  "fuid": "FZTwEB3KfZWGIB6fde",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0009481906890869141,
+  "is_orig": false,
+  "seen_bytes": 10972,
+  "total_bytes": 10972,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "e527b35c65d5b6b999c3371cb0e09290",
+  "sha1": "bd3206889d8ccd53da4827304ee0d2dbe167ded8"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:25.604009Z",
+  "ts": "2018-03-24T17:15:25.518172Z",
+  "fuid": "FYdmqv1eF9I0KEpEEb",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.08583688735961914,
+  "is_orig": false,
+  "seen_bytes": 1000924,
+  "total_bytes": 1000924,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "52df2ab0d9cbb39ec4c5789dc81012ed",
+  "sha1": "8c3a7ddf107338075923738a80a604a9ab4d1b3b"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:25.775067Z",
+  "ts": "2018-03-24T17:15:25.746253Z",
+  "fuid": "FKBn6B3sdtOFdqiyPi",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.028814077377319336,
+  "is_orig": false,
+  "seen_bytes": 331848,
+  "total_bytes": 331848,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "25c46067937e09dca711f30c6c90e84c",
+  "sha1": "39f4de521a7440b10746c9789f4c0f5fb7098bcf"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:25.825986Z",
+  "ts": "2018-03-24T17:15:25.824473Z",
+  "fuid": "FNBpR030Mtwq5CEQe8",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0015130043029785156,
+  "is_orig": false,
+  "seen_bytes": 15330,
+  "total_bytes": 15330,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "dbd6eccb6694ef41b3c579a7a3e8d923",
+  "sha1": "48ae4b0a66e4631cd451fab7b4ece81604655909"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:26.083189Z",
+  "ts": "2018-03-24T17:15:26.080522Z",
+  "fuid": "FNChzM3NHp2SYFi5g",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.002666950225830078,
+  "is_orig": false,
+  "seen_bytes": 33486,
+  "total_bytes": 33486,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "570f8a143bc38cb7e69d81f1b482993a",
+  "sha1": "d2f6a9755fbaba2bc635eba206e919a6baef6d29"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:26.161261Z",
+  "ts": "2018-03-24T17:15:26.156907Z",
+  "fuid": "F8ZucO3bZhy5PnJnAl",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.004354000091552734,
+  "is_orig": false,
+  "seen_bytes": 46166,
+  "total_bytes": 46166,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "905cc5ce615710c161a728bc6ce1195e",
+  "sha1": "a4b0d5eec41e8cc446034ccab0c867c7e5e68b3e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:26.425601Z",
+  "ts": "2018-03-24T17:15:26.420835Z",
+  "fuid": "FlYFA12HTS9oUXxxEh",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C1Wouw2EyMVe2kpyL2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.004765987396240234,
+  "is_orig": false,
+  "seen_bytes": 64296,
+  "total_bytes": 64296,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1a8cb5f5dd0b71da280fb672f3317989",
+  "sha1": "7fda53e4683f4223d0ca629e578748dbeab97be8"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:27.164519Z",
+  "ts": "2018-03-24T17:15:27.157065Z",
+  "fuid": "F30dN44O3wKaKG2p07",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C0N2tC2QAHEPTruuLh"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0074541568756103516,
+  "is_orig": false,
+  "seen_bytes": 38146,
+  "total_bytes": 39594,
+  "missing_bytes": 1448,
+  "overflow_bytes": 0,
+  "timedout": false
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:28.095852Z",
+  "ts": "2018-03-24T17:15:28.094779Z",
+  "fuid": "FPTTvD1botdAVaAaw6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C0N2tC2QAHEPTruuLh"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0010728836059570312,
+  "is_orig": false,
+  "seen_bytes": 16530,
+  "total_bytes": 16530,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "373392b7277ea8d2c012ae5a3bb69403",
+  "sha1": "2afbbc39552e10c8d52fab55127f013bc7472d1c"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:28.106829Z",
+  "ts": "2018-03-24T17:15:28.105797Z",
+  "fuid": "FqUbgT2DctGQUNxDZf",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C0N2tC2QAHEPTruuLh"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0010318756103515625,
+  "is_orig": false,
+  "seen_bytes": 15952,
+  "total_bytes": 15952,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "0cdf75659a9ae65c962921e9e2ae314b",
+  "sha1": "30097ef4e9ddd9ca9d3081055627b0855ad41cf2"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:28.244685Z",
+  "ts": "2018-03-24T17:15:28.244104Z",
+  "fuid": "FWKNRr1nqTo0YhA417",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C0N2tC2QAHEPTruuLh"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0005810260772705078,
+  "is_orig": false,
+  "seen_bytes": 4880,
+  "total_bytes": 4880,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "9114e67d24272ea4525e8942a7b93440",
+  "sha1": "270227e71f7096d6c10e5a46d9afb8cd24893f43"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:28.462884Z",
+  "ts": "2018-03-24T17:15:28.451286Z",
+  "fuid": "F7Yp632qmzwDwQF01h",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C0N2tC2QAHEPTruuLh"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.011597871780395508,
+  "is_orig": false,
+  "seen_bytes": 176876,
+  "total_bytes": 176876,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "498b2a8d36f0a32d9c7d66b4c837198c",
+  "sha1": "933a647aa73127b380a8deb9b7474cdc0c4a8061"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:28.958943Z",
+  "ts": "2018-03-24T17:15:28.956990Z",
+  "fuid": "Fgfz0NFNLm4XcskNl",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C0N2tC2QAHEPTruuLh"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0019528865814208984,
+  "is_orig": false,
+  "seen_bytes": 20230,
+  "total_bytes": 20230,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "e6938b668c59737d159f8feefb310a1f",
+  "sha1": "ccdd4b6052b7e2dfa0bf5fe4182d5e4c9832b97b"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:29.988495Z",
+  "ts": "2018-03-24T17:15:29.988495Z",
+  "fuid": "F9v2JR2Te4mCEqasqd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 18162,
+  "total_bytes": 18162,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "13aee8b871cf19ff9ff65b3ec4ffd37d",
+  "sha1": "03862d2a6acb537650c912441f31ebbd34a60c25"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:30.462117Z",
+  "ts": "2018-03-24T17:15:30.462117Z",
+  "fuid": "FCQBWg2pC5KNSsSsAh",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 231654,
+  "total_bytes": 231654,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "428942cce9899c3c2760d21f42a2a348",
+  "sha1": "61325b0bcbeefafe8160ed52f394ecbeb84e381d"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:30.530475Z",
+  "ts": "2018-03-24T17:15:30.530255Z",
+  "fuid": "FbIcSF1lTOwTeEJGBg",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00021982192993164062,
+  "is_orig": false,
+  "seen_bytes": 8582,
+  "total_bytes": 8582,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "220597ceedea46bfd994639c481b2304",
+  "sha1": "26288ae32ad40ea48d511d8a061cd7c39e2d1f9e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:30.743520Z",
+  "ts": "2018-03-24T17:15:30.630739Z",
+  "fuid": "FqNYB92vQ8ZyPOOBx3",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.11278104782104492,
+  "is_orig": false,
+  "seen_bytes": 1315458,
+  "total_bytes": 1315458,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "102123113755224bbc058ea92501887f",
+  "sha1": "83f9c22db62d329fd25150e9b753f7fc40a9eefc"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:30.850063Z",
+  "ts": "2018-03-24T17:15:30.827681Z",
+  "fuid": "FMqFyK1Xd8PohONje6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.022382020950317383,
+  "is_orig": false,
+  "seen_bytes": 327374,
+  "total_bytes": 327374,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "68d7619e0a70770c5feef628f8296409",
+  "sha1": "bbb2addf54e99b4253b824ef60a7b3a500fa66d6"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:30.851852Z",
+  "ts": "2018-03-24T17:15:30.850063Z",
+  "fuid": "FOmjQx1ib8GUnyUo27",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0017888545989990234,
+  "is_orig": false,
+  "seen_bytes": 26264,
+  "total_bytes": 26264,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1b78d6d03ed4303e843ba2c5bae3bc53",
+  "sha1": "1b1e162c971a3eb5487beef6637d55b0b37bde86"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:31.161753Z",
+  "ts": "2018-03-24T17:15:31.161605Z",
+  "fuid": "FfYiWm1AJMFMrCGAhd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0001480579376220703,
+  "is_orig": false,
+  "seen_bytes": 7058,
+  "total_bytes": 7058,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "32d717f1df9594735a06f0cb2f860b8a",
+  "sha1": "ad1c3a139d6a0fe57a626ca31d1f3e91aff1a185"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:31.163115Z",
+  "ts": "2018-03-24T17:15:31.161753Z",
+  "fuid": "FK1UDA3O66rJY3namd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0013620853424072266,
+  "is_orig": false,
+  "seen_bytes": 29748,
+  "total_bytes": 29748,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "f691dce6c7037983513d9c40bd038c4a",
+  "sha1": "4bb3d3253488e8bc4a80c086b029d595d67f8d24"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:31.590651Z",
+  "ts": "2018-03-24T17:15:31.558419Z",
+  "fuid": "FHzIuB2n5weNPnKYwi",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CekZkh3N3sJ0lKxsaj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.032232046127319336,
+  "is_orig": false,
+  "seen_bytes": 472322,
+  "total_bytes": 472322,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "82926461367e684ed23d7192f6eca00f",
+  "sha1": "ff3f09d1e2f971b4c011639dc57bb6dd967afa49"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:32.343371Z",
+  "ts": "2018-03-24T17:15:32.341191Z",
+  "fuid": "F3wcXz13t2KxwW97S1",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.002179861068725586,
+  "is_orig": false,
+  "seen_bytes": 11640,
+  "total_bytes": 11640,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "91771d82e34770615711d722a6779879",
+  "sha1": "5bc168a8c76401b91e024315c86312319004516f"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:32.634788Z",
+  "ts": "2018-03-24T17:15:32.634788Z",
+  "fuid": "FtpEMK15ALqwH0GlK7",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 46694,
+  "total_bytes": 46694,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "53b73e2ab8de65ae6eb37f76e4ea43b5",
+  "sha1": "6e868c87d86ee7e47bf9f00e7fa50c45d7c9e8d1"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:32.732063Z",
+  "ts": "2018-03-24T17:15:32.634788Z",
+  "fuid": "F9JBVo43QitJXYOCs5",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0972750186920166,
+  "is_orig": false,
+  "seen_bytes": 161364,
+  "total_bytes": 164260,
+  "missing_bytes": 2896,
+  "overflow_bytes": 0,
+  "timedout": false
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:32.732063Z",
+  "ts": "2018-03-24T17:15:32.732063Z",
+  "fuid": "Fc50v42BEbdOUb9oCd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 32198,
+  "total_bytes": 32198,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "994c7f8c61b53f6f3f0fe5a03c5181cc",
+  "sha1": "515369ff780d290d2604bcbd3c9dbc33934d424b"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:32.768007Z",
+  "ts": "2018-03-24T17:15:32.767984Z",
+  "fuid": "F3V76U2MFgjUVGujC6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.000023126602172851562,
+  "is_orig": false,
+  "seen_bytes": 47494,
+  "total_bytes": 47494,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "4a8692a3639a46f0c512f5d77f42ff16",
+  "sha1": "2d9b075a65eb4967dedbcd2fe5bcd1e531200e12"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:33.353123Z",
+  "ts": "2018-03-24T17:15:33.349418Z",
+  "fuid": "FKqstA4RbCgKvBlTtk",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0037050247192382812,
+  "is_orig": false,
+  "seen_bytes": 138366,
+  "total_bytes": 138366,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "ca43d6204a55202efe6ba44167dfea70",
+  "sha1": "9bb6958ffc933d1baaf1c8e42093ececd2175b73"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:33.405104Z",
+  "ts": "2018-03-24T17:15:33.402892Z",
+  "fuid": "FGhZG13YfzNGvdAvTb",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0022118091583251953,
+  "is_orig": false,
+  "seen_bytes": 65820,
+  "total_bytes": 65820,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "44a9ee8ee0965dea1add72581a244ce4",
+  "sha1": "ee6f3c9945f955d4dd78833a24d3989a8aaad7ba"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:34.794593Z",
+  "ts": "2018-03-24T17:15:34.794470Z",
+  "fuid": "FAuNNi44JU2eqgsOee",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00012302398681640625,
+  "is_orig": false,
+  "seen_bytes": 11874,
+  "total_bytes": 11874,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "b4c66316c801db2369c77c6364ff52c9",
+  "sha1": "619a09ceb7bdcd3ebf4606503c20d1d68caf59d8"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:34.804444Z",
+  "ts": "2018-03-24T17:15:34.794593Z",
+  "fuid": "FCFrpg1oZkFDXrsSR4",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00985097885131836,
+  "is_orig": false,
+  "seen_bytes": 79582,
+  "total_bytes": 79582,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "74638361153d4f40914cdfb23a2d1523",
+  "sha1": "d2c68b85c505b94d8aad71751d83b3858612c5cf"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:34.929353Z",
+  "ts": "2018-03-24T17:15:34.929315Z",
+  "fuid": "FWgwCc38V1wEGL20rb",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00003790855407714844,
+  "is_orig": false,
+  "seen_bytes": 2768,
+  "total_bytes": 2768,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "663b43b0bd09a59e32a5f0f951e556a4",
+  "sha1": "0db475b4e9eb7b7c6d0071bd5e717fc6a8bce7da"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:34.933854Z",
+  "ts": "2018-03-24T17:15:34.929353Z",
+  "fuid": "FSDQuzexdEdkgf9T7",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0045011043548583984,
+  "is_orig": false,
+  "seen_bytes": 49858,
+  "total_bytes": 49858,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "2541ca475874b347232c224140497b6c",
+  "sha1": "63c58939ce91643da16ddd509453bef77ca50238"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:35.033802Z",
+  "ts": "2018-03-24T17:15:35.032649Z",
+  "fuid": "F7bNu93bhUmQxD03x5",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CZGN7r1wfvdpR15sUj"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0011529922485351562,
+  "is_orig": false,
+  "seen_bytes": 19498,
+  "total_bytes": 19498,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "47f479b2e013970fd3505d61b6a84185",
+  "sha1": "78b99338562f9c1231945cd4f34c98223c1610cb"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:35.901598Z",
+  "ts": "2018-03-24T17:15:35.901598Z",
+  "fuid": "FoY9dA2ne0rP0WUCdd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 74162,
+  "total_bytes": 74162,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "0992d2d02b5b04f15fdc8d35897f296c",
+  "sha1": "614afc0b99d26d7e53d74c8c20e5cc1e91da9db5"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:36.046638Z",
+  "ts": "2018-03-24T17:15:36.043834Z",
+  "fuid": "FEMHXy3ogOaNSqP473",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0028040409088134766,
+  "is_orig": false,
+  "seen_bytes": 33714,
+  "total_bytes": 33714,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "9f74c4750fb1802d6d4a0bb8ddfbc9fb",
+  "sha1": "29090edd4094ea2646b1a5d21fb81610d4123ed3"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:36.061237Z",
+  "ts": "2018-03-24T17:15:36.057616Z",
+  "fuid": "Fi0XHw1BSvS8RwwWr7",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0036211013793945312,
+  "is_orig": false,
+  "seen_bytes": 48316,
+  "total_bytes": 48316,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "3bbfde0bbe310a23a690cc643c065f87",
+  "sha1": "84fb90afe8948803d0314f9551fbdd8dadcdf9f8"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:36.177520Z",
+  "ts": "2018-03-24T17:15:36.175762Z",
+  "fuid": "FNRDhT3ACBd1QpWa6l",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0017580986022949219,
+  "is_orig": false,
+  "seen_bytes": 53092,
+  "total_bytes": 53092,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "49c7118f0bd254b1196363ad727dcde7",
+  "sha1": "6ae6f7fba3392d3d80dcf052d3bb0a5a22585a95"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:36.782124Z",
+  "ts": "2018-03-24T17:15:36.777750Z",
+  "fuid": "F35SWE4596n2g3dGjf",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.004374027252197266,
+  "is_orig": false,
+  "seen_bytes": 151248,
+  "total_bytes": 151248,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "597e0045c6d46e40a870428a1bcb01d0",
+  "sha1": "64ffb1457ca21cf4dfe10cbe88b5d9ebe9c78216"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:36.910901Z",
+  "ts": "2018-03-24T17:15:36.907439Z",
+  "fuid": "FNY7L71oF1B3p09eqi",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.003462076187133789,
+  "is_orig": false,
+  "seen_bytes": 175706,
+  "total_bytes": 175706,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "6c4d606a2ae71f885bedc33834606a97",
+  "sha1": "52249428d36a81e9fda07d17991bde3aaedeb2ae"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:37.024570Z",
+  "ts": "2018-03-24T17:15:37.021014Z",
+  "fuid": "FANEgvwYd6NLKi0Lk",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0035560131072998047,
+  "is_orig": false,
+  "seen_bytes": 40174,
+  "total_bytes": 40174,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "7c76b0619328083ac297ac1bd1c8746a",
+  "sha1": "a9de806a2dea6378fbdaf1393fdb3d36e73db7fd"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:37.024784Z",
+  "ts": "2018-03-24T17:15:37.024608Z",
+  "fuid": "FnZUJX2R3uPrwpZo2k",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0001761913299560547,
+  "is_orig": false,
+  "seen_bytes": 6426,
+  "total_bytes": 6426,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1b170431e9a4ce9b6b52b275fff67bed",
+  "sha1": "8f20c4e882fd61dd18002e6a81ae8b59734d077e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:37.025601Z",
+  "ts": "2018-03-24T17:15:37.024784Z",
+  "fuid": "FZR83P2qj9zXca8qH7",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0008168220520019531,
+  "is_orig": false,
+  "seen_bytes": 1694,
+  "total_bytes": 1694,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "76260481091de2529b959509a06d041b",
+  "sha1": "50056e7e78c3d5ebaa026ea49e5ec5ee88f05e65"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:37.199011Z",
+  "ts": "2018-03-24T17:15:37.182403Z",
+  "fuid": "FUhTBfap8u7laLb1",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.016607999801635742,
+  "is_orig": false,
+  "seen_bytes": 203908,
+  "total_bytes": 203908,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "097798d79632f1b998de45cb56043e12",
+  "sha1": "7a320a5ef760a14e9f42a3f8c568e0f5782f7398"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:37.343190Z",
+  "ts": "2018-03-24T17:15:37.329740Z",
+  "fuid": "FJm2OX35p3VmzXeP64",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.013449907302856445,
+  "is_orig": false,
+  "seen_bytes": 159142,
+  "total_bytes": 159142,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "906f589460c791ef9e8bc6003c39f38b",
+  "sha1": "826fb8446b69e6c9b9546fd83544cedbec9e347c"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:37.370768Z",
+  "ts": "2018-03-24T17:15:37.361858Z",
+  "fuid": "FOliYS1ipb8EYMM8ph",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.008910179138183594,
+  "is_orig": false,
+  "seen_bytes": 100974,
+  "total_bytes": 100974,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "0ad18af09e6f9d21e0f3cf1624f97940",
+  "sha1": "7cd7753002e6f5041aef68a5a511a6a2dd81a753"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:38.594436Z",
+  "ts": "2018-03-24T17:15:38.490797Z",
+  "fuid": "F8SlzkdWD3Nkj7Xe1",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CHA6j6Qz49xU7HWx5"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.10363888740539551,
+  "is_orig": false,
+  "seen_bytes": 1209002,
+  "total_bytes": 1209002,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "bceb48771ce5ae429b91c4b6ddefa517",
+  "sha1": "f954b0ed92ab19b35a3679ae5a61c00b5567fd57"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:44.596133Z",
+  "ts": "2018-03-24T17:15:44.596068Z",
+  "fuid": "FFe7bp2bvEUC0kIdBh",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00006508827209472656,
+  "is_orig": false,
+  "seen_bytes": 8174,
+  "total_bytes": 8174,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "93c1a286c33a1d49b60388627302c6e2",
+  "sha1": "f4d79514ad60713990e01b8dafdbd162110e2cfc"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:44.598086Z",
+  "ts": "2018-03-24T17:15:44.596133Z",
+  "fuid": "FVlm1x4PB4LH8CXo4i",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.001953125,
+  "is_orig": false,
+  "seen_bytes": 64900,
+  "total_bytes": 64900,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1ca937b3d8b0d7b45a3902beb28fc4c7",
+  "sha1": "279ff1601ff9eaa66342533202dcd9bad5a822e8"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:44.849140Z",
+  "ts": "2018-03-24T17:15:44.844196Z",
+  "fuid": "FKlDKg12TnI34DZsal",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00494384765625,
+  "is_orig": false,
+  "seen_bytes": 154540,
+  "total_bytes": 154540,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "8a0886475055caab7201921575e2b518",
+  "sha1": "1484a5b4822c9ccb46ac707d3e2738cb2b4f352c"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:45.043531Z",
+  "ts": "2018-03-24T17:15:45.040791Z",
+  "fuid": "FJRb8o1GONHCYM8paj",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0027399063110351562,
+  "is_orig": false,
+  "seen_bytes": 64752,
+  "total_bytes": 64752,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "7d4514e2f99d52988c9486e18e448851",
+  "sha1": "782acb43f44646e5018c57b02a98ffa7430faef1"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:45.044942Z",
+  "ts": "2018-03-24T17:15:45.043629Z",
+  "fuid": "FUMq9f6P1ca4S5lQe",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0013129711151123047,
+  "is_orig": false,
+  "seen_bytes": 29030,
+  "total_bytes": 29030,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "e964a3474bdcff18320a9b2c09f7de00",
+  "sha1": "40119ddf741130129ca252d262ea1ed76a857256"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:45.256996Z",
+  "ts": "2018-03-24T17:15:45.251077Z",
+  "fuid": "FtUDaC1zXqbY25IfNf",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.005918979644775391,
+  "is_orig": false,
+  "seen_bytes": 205792,
+  "total_bytes": 205792,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "3432b6133d7e77d9847edc38c4a71d6a",
+  "sha1": "9ea4436dd0d947befa044b2687e6a76f00140c12"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:45.525585Z",
+  "ts": "2018-03-24T17:15:45.521169Z",
+  "fuid": "FMzOajv7WWemvCUqd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.004415988922119141,
+  "is_orig": false,
+  "seen_bytes": 86806,
+  "total_bytes": 86806,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "69e8059af02d90116781bd167cfc63c9",
+  "sha1": "52b9cc0b87ee451c5d00656eb0c0c8f8149eb6fd"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:45.589599Z",
+  "ts": "2018-03-24T17:15:45.589199Z",
+  "fuid": "FSu7MA2KU5Y1NOkJjk",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0003998279571533203,
+  "is_orig": false,
+  "seen_bytes": 11322,
+  "total_bytes": 11322,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "ead071255b578203c30e1e5b530f3880",
+  "sha1": "9201b8a9354162c4ae68f17291a8a592987e29d9"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:45.757686Z",
+  "ts": "2018-03-24T17:15:45.753202Z",
+  "fuid": "F5Id1p3iirDyreOuZf",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.004483938217163086,
+  "is_orig": false,
+  "seen_bytes": 10838,
+  "total_bytes": 10838,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "b9888b5a6f37951abff1cc53197345fe",
+  "sha1": "7e7f7f4b243fd0319ba0f43aeaf113d1a9c3076d"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:45.831712Z",
+  "ts": "2018-03-24T17:15:45.827721Z",
+  "fuid": "FMrkfPVCiloAFHnj4",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.003990888595581055,
+  "is_orig": false,
+  "seen_bytes": 86688,
+  "total_bytes": 86688,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1e3147a3da42e8c8847d0fb66d38cd6b",
+  "sha1": "2c8d643a960c1cced2feca0ba291bd115a7cccec"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:47.868002Z",
+  "ts": "2018-03-24T17:15:47.825988Z",
+  "fuid": "FDzwPE3kaDl4AXQyRd",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C9njgc3w98wrjLsGt1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.04201388359069824,
+  "is_orig": false,
+  "seen_bytes": 483882,
+  "total_bytes": 483882,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "31ffd392b4e5a0d5530cf553e96d6ffc",
+  "sha1": "4d657cb79a25e1d9cb0e7bb0c9b2ea948384b470"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:48.513216Z",
+  "ts": "2018-03-24T17:15:48.485562Z",
+  "fuid": "FNcN8MAAuo0ICjaXf",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.027653932571411133,
+  "is_orig": false,
+  "seen_bytes": 21684,
+  "total_bytes": 21684,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "fa81ee7ca73768de1e44e90c96be3b74",
+  "sha1": "4145bf58c561bb8f998b1777b9585cdeb8e19a87"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:48.810605Z",
+  "ts": "2018-03-24T17:15:48.735401Z",
+  "fuid": "FTnQn2wEHIDET9dR8",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.07520413398742676,
+  "is_orig": false,
+  "seen_bytes": 579544,
+  "total_bytes": 579544,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "edb84fb086ea35f6ed563fad3150f7dd",
+  "sha1": "7622d7915102e03249f58a2654ef8b9311b43b0e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:49.134219Z",
+  "ts": "2018-03-24T17:15:48.842542Z",
+  "fuid": "FZw9hEoZV85alejr1",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.29167699813842773,
+  "is_orig": false,
+  "seen_bytes": 1074804,
+  "total_bytes": 1076252,
+  "missing_bytes": 1448,
+  "overflow_bytes": 0,
+  "timedout": false
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:49.568674Z",
+  "ts": "2018-03-24T17:15:49.499235Z",
+  "fuid": "FVvzs54Go6hWRefR5i",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.06943917274475098,
+  "is_orig": false,
+  "seen_bytes": 1028264,
+  "total_bytes": 1028264,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "c8dc416fb2852158fbeaced223849ed1",
+  "sha1": "c086a0698a2e2b8130a500320af7027668f6caef"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:50.042476Z",
+  "ts": "2018-03-24T17:15:50.031731Z",
+  "fuid": "FjZkXOUZN86wK8iHa",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.010745048522949219,
+  "is_orig": false,
+  "seen_bytes": 126342,
+  "total_bytes": 126342,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "e030934b469efd89f0d1cb4e50c82322",
+  "sha1": "c91f6872e804274d2b615f4f3ead979f176adba3"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:50.615619Z",
+  "ts": "2018-03-24T17:15:50.573424Z",
+  "fuid": "FdOJEp10Kf6THUkhW6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.04219484329223633,
+  "is_orig": false,
+  "seen_bytes": 500068,
+  "total_bytes": 500068,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "0ec8580d5eb0c0ca878403c7137234c0",
+  "sha1": "e3eba78f07e03cf86d96b2b3ae4e54dfa9fe99fc"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:50.664783Z",
+  "ts": "2018-03-24T17:15:50.653654Z",
+  "fuid": "Fv57Is1ufFDp0srmTa",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.011128902435302734,
+  "is_orig": false,
+  "seen_bytes": 130428,
+  "total_bytes": 130428,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "105690417cc22d06a1c4a66069ec8a91",
+  "sha1": "5e0e4d8cbad5302244c06f79f74497a30754f8af"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:50.729907Z",
+  "ts": "2018-03-24T17:15:50.728909Z",
+  "fuid": "FPVwmO1zg5xoyqC8t6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0009980201721191406,
+  "is_orig": false,
+  "seen_bytes": 11416,
+  "total_bytes": 11416,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "2949d1dd95caec6257bc70095e1d37cc",
+  "sha1": "dcb0b572f1207ad192d8cb1a9010fc6dd22d0000"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:51.011029Z",
+  "ts": "2018-03-24T17:15:51.007907Z",
+  "fuid": "FGaj1K2z7o9rGesES6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CC5FX51kG9OjczXCP6"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.003122091293334961,
+  "is_orig": false,
+  "seen_bytes": 45348,
+  "total_bytes": 45348,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "112381729879b01d5e5de71949327208",
+  "sha1": "463b0fc0769d68506776a7450863ef1d8736a600"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:53.379609Z",
+  "ts": "2018-03-24T17:15:53.378439Z",
+  "fuid": "FoNtVN2qCIGC2i3uIi",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CrFgNb4kqDpcTJR8ig"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0011701583862304688,
+  "is_orig": false,
+  "seen_bytes": 28444,
+  "total_bytes": 28444,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "6ec34656bfb387a4516a2e4cbfdd5206",
+  "sha1": "a83744294198857c25f4f50028aa13ebcac34c61"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:15:53.997105Z",
+  "ts": "2018-03-24T17:15:53.994155Z",
+  "fuid": "FRk69WbFRgwOJtvU5",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CrFgNb4kqDpcTJR8ig"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.002949953079223633,
+  "is_orig": false,
+  "seen_bytes": 29282,
+  "total_bytes": 29282,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "7e83f7054f89dd8eb8a943b7f91e1fa6",
+  "sha1": "9351bbbf9b2f08818067a8f7aba0e1ba65665c42"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:03.379379Z",
+  "ts": "2018-03-24T17:16:03.372608Z",
+  "fuid": "FTzcDs2Y2yF0lL41L6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C5z4ux31MTbx5QaME3"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.006771087646484375,
+  "is_orig": false,
+  "seen_bytes": 23422,
+  "total_bytes": 23422,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "f6c4b70e14e13f347b5020ea149ebc19",
+  "sha1": "6b41e6a84df533cada462a52308a83ac17abb686"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:03.911520Z",
+  "ts": "2018-03-24T17:16:03.907042Z",
+  "fuid": "F2CQm41zn4MXcvukn",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C5z4ux31MTbx5QaME3"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.004477977752685547,
+  "is_orig": false,
+  "seen_bytes": 52552,
+  "total_bytes": 52552,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "17c437d0d0919774c6b7042ea12fac24",
+  "sha1": "bdbdc8b0d63f2550e7e9c696f0e585d25757de25"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:04.303452Z",
+  "ts": "2018-03-24T17:16:04.254318Z",
+  "fuid": "FOs4N44xl6bCVfhyNi",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C5z4ux31MTbx5QaME3"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.049134016036987305,
+  "is_orig": false,
+  "seen_bytes": 566002,
+  "total_bytes": 566002,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "b07fb0d1f0adb8af48db21594ee6df68",
+  "sha1": "c2943d46b4c85e877ba6a2894c3526d826497b5a"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:04.303608Z",
+  "ts": "2018-03-24T17:16:04.303452Z",
+  "fuid": "FJ9nHobsm0IhquMwb",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C5z4ux31MTbx5QaME3"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00015592575073242188,
+  "is_orig": false,
+  "seen_bytes": 7950,
+  "total_bytes": 7950,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "96a0fc6a9523f9c75ec30ef675613f89",
+  "sha1": "9907202ae72ec5eaf2a644e1217e7e8df9bbf45d"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:04.415228Z",
+  "ts": "2018-03-24T17:16:04.409508Z",
+  "fuid": "F3pHBe3hdHY5H5UYad",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C5z4ux31MTbx5QaME3"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.005719900131225586,
+  "is_orig": false,
+  "seen_bytes": 67100,
+  "total_bytes": 67100,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "3ff25cb854d0914a6075cdb13cd2c7b4",
+  "sha1": "7ecbbc2a2b3e8c5ee38d45fcb2d529ec5a556d02"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:04.654983Z",
+  "ts": "2018-03-24T17:16:04.654877Z",
+  "fuid": "FPZc0y3qr8EmwG2iY2",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C5z4ux31MTbx5QaME3"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00010609626770019531,
+  "is_orig": false,
+  "seen_bytes": 5406,
+  "total_bytes": 5406,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "a4c68c2f750dab7884fafff451618567",
+  "sha1": "c1300fc351cecce6071273c7137f7cff40561272"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:15.707154Z",
+  "ts": "2018-03-24T17:16:15.685377Z",
+  "fuid": "FedTp62ZTS0Hv9su6e",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.02177715301513672,
+  "is_orig": false,
+  "seen_bytes": 165214,
+  "total_bytes": 165214,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "b4f0afec3f794c9eca5cc07ce8c45aa9",
+  "sha1": "ed22233ca73a48aadec3cda72d6c846f8c473c41"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:16.251927Z",
+  "ts": "2018-03-24T17:16:16.251637Z",
+  "fuid": "FYIQAX55jsRCDEYg6",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0002899169921875,
+  "is_orig": false,
+  "seen_bytes": 10262,
+  "total_bytes": 10262,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "b7e119d23f989048197519e1c2cdb3d0",
+  "sha1": "3b0c3778ed3bca6c2a96173d0e9f81f67f9e9339"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:16.258149Z",
+  "ts": "2018-03-24T17:16:16.255483Z",
+  "fuid": "F1NBe01PcO5feX3ZL7",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.002665996551513672,
+  "is_orig": false,
+  "seen_bytes": 99122,
+  "total_bytes": 99122,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "45a20054dbeab51851715cd0f1f8cb14",
+  "sha1": "9a208616d0c655d672eb1129e39cd4adc119b4ce"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:16.504832Z",
+  "ts": "2018-03-24T17:16:16.503671Z",
+  "fuid": "F9FKNx4NWoL0u8x9Wf",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0011610984802246094,
+  "is_orig": false,
+  "seen_bytes": 67292,
+  "total_bytes": 67292,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "ab4859e830bc301455eb1cef06c5ccdf",
+  "sha1": "fe1dea765d8c2011f7105c38c1b1bb6656be29ff"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:16.521498Z",
+  "ts": "2018-03-24T17:16:16.516653Z",
+  "fuid": "Fqq51p4q1t7wbZyP87",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0048449039459228516,
+  "is_orig": false,
+  "seen_bytes": 168594,
+  "total_bytes": 168594,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "e2c4d194f5960636038af3cb8cec60ac",
+  "sha1": "171fddaed70270f3db15edf24c1eea3554a69c78"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:16.885381Z",
+  "ts": "2018-03-24T17:16:16.884722Z",
+  "fuid": "FI0Clm12CqLwOBRn8j",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0006589889526367188,
+  "is_orig": false,
+  "seen_bytes": 13618,
+  "total_bytes": 13618,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "28b32d6553ece09e2a25d677a80822fb",
+  "sha1": "200ae08b17d1f472aefe7df8fff312bd87c867ee"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:17.197897Z",
+  "ts": "2018-03-24T17:16:17.196975Z",
+  "fuid": "FkYhP63QQiQjYvYOE9",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0009219646453857422,
+  "is_orig": false,
+  "seen_bytes": 11614,
+  "total_bytes": 11614,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "7ca323cb1955e71f5c8d7075d90bfde1",
+  "sha1": "11523269ed43253720c5822655f132e706d18a5e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:17.223932Z",
+  "ts": "2018-03-24T17:16:17.197897Z",
+  "fuid": "F8WuWS1e5Z3nYhzRq8",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CpdLlR30vgBwNwsGa1"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.026035070419311523,
+  "is_orig": false,
+  "seen_bytes": 297640,
+  "total_bytes": 297640,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "640013eb678e964fd82d061971e9d850",
+  "sha1": "2d7f3571ecfdc8de7d735a6e32da965f7a5a7f48"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:19.872216Z",
+  "ts": "2018-03-24T17:16:19.872216Z",
+  "fuid": "FBmzzY3i4QAJLfMHL1",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CxUO6m4gVYS0379one"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 15932,
+  "total_bytes": 15932,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "18813758778ece61bcdf84018218fc1d",
+  "sha1": "ca155b16f5c45415725117a389245192582b7af7"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:20.138936Z",
+  "ts": "2018-03-24T17:16:20.137957Z",
+  "fuid": "FvGGO48MsuIeUrOX8",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CxUO6m4gVYS0379one"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0009789466857910156,
+  "is_orig": false,
+  "seen_bytes": 48490,
+  "total_bytes": 48490,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "42f953cfda3506a41e726bd84a6b7c76",
+  "sha1": "048372c45084206c0c41cc4e95b028a505d98d7f"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:24.516033Z",
+  "ts": "2018-03-24T17:16:24.509235Z",
+  "fuid": "Fmdwkw3N5uj0m6INoc",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CxUO6m4gVYS0379one"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0067980289459228516,
+  "is_orig": false,
+  "seen_bytes": 82874,
+  "total_bytes": 82874,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "2742637e8eafc69bb1b425457a31cfa5",
+  "sha1": "1494588d5018ee7cf70fd92c7dd1436052725b57"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:24.612859Z",
+  "ts": "2018-03-24T17:16:24.606188Z",
+  "fuid": "FYPwNKmQvtsMoVQLk",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CxUO6m4gVYS0379one"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.006670951843261719,
+  "is_orig": false,
+  "seen_bytes": 131422,
+  "total_bytes": 131422,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "b7ab4f7f7781bda9c8ab4377f50e4dc9",
+  "sha1": "c6d90e42c29899b21d464b5b67da0ed80706795d"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:34.358647Z",
+  "ts": "2018-03-24T17:16:34.358647Z",
+  "fuid": "F9y63X5ywSBvfXqqk",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 311580,
+  "total_bytes": 311580,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1b10bce3261826a68d6b3cf9f9487b0a",
+  "sha1": "c44e47f16b08067d5775e87686319e30d502f584"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:34.900488Z",
+  "ts": "2018-03-24T17:16:34.899510Z",
+  "fuid": "F6EUJ320f0vg4yr9Tg",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0009779930114746094,
+  "is_orig": false,
+  "seen_bytes": 18010,
+  "total_bytes": 18010,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1ab3815375798dff69badcf84b530312",
+  "sha1": "293a1e97d0cac9698684fb0c2ff0dada5100e5ca"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:35.068338Z",
+  "ts": "2018-03-24T17:16:35.065202Z",
+  "fuid": "Flgq922pWpYgu9ZaT7",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0031359195709228516,
+  "is_orig": false,
+  "seen_bytes": 53996,
+  "total_bytes": 53996,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "16c95675bb6ede5c3b5a76eaae6baac2",
+  "sha1": "9b76101c1dced8d373e5a8f2b349ebc72a56dd0a"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:35.245343Z",
+  "ts": "2018-03-24T17:16:35.232038Z",
+  "fuid": "Fel6YQ1YJTf4x2s1De",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.013304948806762695,
+  "is_orig": false,
+  "seen_bytes": 199326,
+  "total_bytes": 199326,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1eaa249088c32e14ec484bc40c89e967",
+  "sha1": "c0ebd32cfea0a7577f749eb055aa5d4e078e05b7"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:35.246818Z",
+  "ts": "2018-03-24T17:16:35.245594Z",
+  "fuid": "FJJbEU1HGM1ubiwIW1",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0012240409851074219,
+  "is_orig": false,
+  "seen_bytes": 14308,
+  "total_bytes": 14308,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "710ec5c745dcd9994e049c3da8ecef7e",
+  "sha1": "9bf02f8a0d5b6504da191587d160a6f29c828c66"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:35.662962Z",
+  "ts": "2018-03-24T17:16:35.656428Z",
+  "fuid": "FCU28K3o90IHAjKhM7",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00653386116027832,
+  "is_orig": false,
+  "seen_bytes": 78550,
+  "total_bytes": 78550,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "6ef61ae8e9073654f1001dee53e3b5f1",
+  "sha1": "55449921541024c0bc2c40ad8a282de8b3fa376e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:36.213389Z",
+  "ts": "2018-03-24T17:16:36.124135Z",
+  "fuid": "FrwLiw4Vj0WXfSk84c",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.08925390243530273,
+  "is_orig": false,
+  "seen_bytes": 916942,
+  "total_bytes": 916942,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "878dd51ad15ad3545b30b6b7efc4d9ef",
+  "sha1": "34e2d1650cbce464b7b513a9d8bc6560b19b9f74"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:36.242784Z",
+  "ts": "2018-03-24T17:16:36.232447Z",
+  "fuid": "FmApw73M22XDktPX69",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.010337114334106445,
+  "is_orig": false,
+  "seen_bytes": 136766,
+  "total_bytes": 136766,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "3fa99737282ea7276016ebc0448ec573",
+  "sha1": "0e7300b7359da184d779259687f4037bef2a252b"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:36.310135Z",
+  "ts": "2018-03-24T17:16:36.305569Z",
+  "fuid": "Fjzeeu2BAJtQMifAfe",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CBUzUPHVTrDnJYGZ2"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0045659542083740234,
+  "is_orig": false,
+  "seen_bytes": 30822,
+  "total_bytes": 30822,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "1feccbc1da88c78a0c9244f777651a78",
+  "sha1": "e3a2a7df8d6ea6f05bc996fbcf5b020cd19ace18"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.189499Z",
+  "ts": "2018-03-24T17:16:38.188897Z",
+  "fuid": "FmDX5D3nSVj24uPoyk",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0006020069122314453,
+  "is_orig": false,
+  "seen_bytes": 2634,
+  "total_bytes": 2634,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "ac7d1941a9cc1367d1df63e46faa93e3",
+  "sha1": "bc33ab165f1548c4675e3e2e3ca243d48dd4db38"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.327156Z",
+  "ts": "2018-03-24T17:16:38.322504Z",
+  "fuid": "Ff6EZL3rkD2tC38EZ9",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0046520233154296875,
+  "is_orig": false,
+  "seen_bytes": 60688,
+  "total_bytes": 60688,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "d26d9dd18b05ef5eb30f3b54d73cb932",
+  "sha1": "088885973587244cd21006e2b5ab6ceb72dd9f7e"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.330151Z",
+  "ts": "2018-03-24T17:16:38.330040Z",
+  "fuid": "FvcAiY25Tb20QbATPi",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00011110305786132812,
+  "is_orig": false,
+  "seen_bytes": 10096,
+  "total_bytes": 10096,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "5abe042e25b738080c986570985789b2",
+  "sha1": "13add66d807cb143aeb6d1829a251bfa503788d0"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.425478Z",
+  "ts": "2018-03-24T17:16:38.421905Z",
+  "fuid": "FF3waD3TKMwixc8nK5",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0035729408264160156,
+  "is_orig": false,
+  "seen_bytes": 73910,
+  "total_bytes": 73910,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "e2a97d3e8d2dcd832df6a8697dc97802",
+  "sha1": "7063ad9a9398696293bb34cf0d504abbe9533392"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.598229Z",
+  "ts": "2018-03-24T17:16:38.497158Z",
+  "fuid": "F5P65R11QH6M2skQT8",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.10107088088989258,
+  "is_orig": false,
+  "seen_bytes": 1194408,
+  "total_bytes": 1194408,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "31edd310b4196488c57e8b3c5f6f2eb6",
+  "sha1": "168bef771620d1456d877b5a61325d85a96dcf14"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.829872Z",
+  "ts": "2018-03-24T17:16:38.828930Z",
+  "fuid": "FTzGiYGGz54zotmEc",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.0009419918060302734,
+  "is_orig": false,
+  "seen_bytes": 6912,
+  "total_bytes": 6912,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "0aa3f225f86fd5b5c69e39e75b7ff9c2",
+  "sha1": "b32e402166e53f9b1782f2cff1e5510693b79f92"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.829977Z",
+  "ts": "2018-03-24T17:16:38.829872Z",
+  "fuid": "Fg1ftg3B2kSZaSfg35",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00010514259338378906,
+  "is_orig": false,
+  "seen_bytes": 7268,
+  "total_bytes": 7268,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "4b1e7c219982409177fd3faafeee297a",
+  "sha1": "0dc4f70a9ff46f13fdf2ae39e7608851a0030f4d"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:38.989727Z",
+  "ts": "2018-03-24T17:16:38.989632Z",
+  "fuid": "FmWx7r3R1Ybqnsi3jl",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.00009512901306152344,
+  "is_orig": false,
+  "seen_bytes": 6524,
+  "total_bytes": 6524,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "34b71dc463c3ff3d8b174637a6f98e95",
+  "sha1": "52ceadd61595e71b463a3951ab44fa99b8197d60"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:39.083049Z",
+  "ts": "2018-03-24T17:16:39.071797Z",
+  "fuid": "FGmLD819leQFiKR0Gb",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.011252164840698242,
+  "is_orig": false,
+  "seen_bytes": 128590,
+  "total_bytes": 128590,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "f5bfd4ced6f7f885d426570958f9a77c",
+  "sha1": "30498e5d8982ae618b286048bd5f01dd595ec551"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:16:39.662322Z",
+  "ts": "2018-03-24T17:16:39.660335Z",
+  "fuid": "F58yZ712vQ4v6h5KA",
+  "tx_hosts": [
+    "91.189.91.23"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CRToMHULH0MkmoW51"
+  ],
+  "source": "HTTP",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5"
+  ],
+  "mime_type": "application/x-debian-package",
+  "duration": 0.001986980438232422,
+  "is_orig": false,
+  "seen_bytes": 26960,
+  "total_bytes": 26960,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "497cd1c0a5fa0cbf7a3976b4c4147c6e",
+  "sha1": "933c4ee36b8e1bb6122454936e79e1a9b639e7fa"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:17:22.508825Z",
+  "ts": "2018-03-24T17:17:22.508825Z",
+  "fuid": "FDMLhp1kw3XMTQO0tc",
+  "tx_hosts": [
+    "172.217.14.74"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CMDkhG3xivAj7x5X7"
+  ],
+  "source": "SSL",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5",
+    "X509"
+  ],
+  "mime_type": "application/x-x509-user-cert",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 1064,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "d21fc521a08d4c98cd0332d9c2a88b7f",
+  "sha1": "f89fceb4e00fd5cdc4a7f3ada7f7e27aa5612c78"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:19:19.920293Z",
+  "ts": "2018-03-24T17:19:19.920293Z",
+  "fuid": "F9bYXp1DxeMTGAOjL6",
+  "tx_hosts": [
+    "134.71.3.16"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "C5h4X01VBc7p1YruRe"
+  ],
+  "source": "SSL",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5",
+    "X509"
+  ],
+  "mime_type": "application/x-x509-ca-cert",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 1174,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "b15409274f54ad8f023d3b85a5ecec5d",
+  "sha1": "e6a3b45b062d509b3382282d196efe97d5956ccb"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:30:13.469913Z",
+  "ts": "2018-03-24T17:30:13.469913Z",
+  "fuid": "FBsSof4PVRywzOZR8l",
+  "tx_hosts": [
+    "134.71.3.17"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "Ce18AsCxGCDcH4m6d"
+  ],
+  "source": "SSL",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5",
+    "X509"
+  ],
+  "mime_type": "application/x-x509-user-cert",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 1072,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "3e1c7cc12f6422bedf790e99d5ecace5",
+  "sha1": "b76d1653c60d73d860cb02e177aa2c1152d5716c"
+}
+{
+  "_path": "files",
+  "_write_ts": "2018-03-24T17:30:13.469995Z",
+  "ts": "2018-03-24T17:30:13.469995Z",
+  "fuid": "FmiJqL3kwErhNg39Di",
+  "tx_hosts": [
+    "134.71.3.17"
+  ],
+  "rx_hosts": [
+    "10.47.5.155"
+  ],
+  "conn_uids": [
+    "CkB6h03RZ4Mdwy4zma"
+  ],
+  "source": "SSL",
+  "depth": 0,
+  "analyzers": [
+    "SHA1",
+    "MD5",
+    "X509"
+  ],
+  "mime_type": "application/x-x509-user-cert",
+  "duration": 0.0,
+  "is_orig": false,
+  "seen_bytes": 1072,
+  "missing_bytes": 0,
+  "overflow_bytes": 0,
+  "timedout": false,
+  "md5": "3e1c7cc12f6422bedf790e99d5ecace5",
+  "sha1": "b76d1653c60d73d860cb02e177aa2c1152d5716c"
 }
