@@ -14,7 +14,7 @@ jq 'select(.ts == "2018-03-24T17:15:21.196410Z")' $filepath_in > $filepath_out/q
 echo Query 2 Done
 jq 'select(._path == "http")' $filepath_in > $filepath_out/query2.txt
 echo Query 3 Done
-jq 'select(.status_code == 404)' $filepath_in > $filepath_out/query3.txt
+jq 'select(.[] | tostring | contains("10.47.5.155"))' $filepath_in > $filepath_out/query3.txt
 echo Query 4 Done
 jq '.["_path"]' $filepath_in | sort -u > $filepath_out/query4.txt
 echo Query 5 Done
