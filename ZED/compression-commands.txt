@@ -1,0 +1,5 @@
+compress data:
+tar cfz file-name.tgz bigfile
+
+decompress data:
+tar -xvzf file-name.tgz
