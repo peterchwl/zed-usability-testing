@@ -1,6 +1,6 @@
 {_path:"smb_files",count:2(uint64)}
-{_path:"ssh",count:2(uint64)}
 {_path:"pe",count:2(uint64)}
+{_path:"ssh",count:2(uint64)}
 {_path:"dpd",count:2(uint64)}
 {_path:"kerberos",count:4(uint64)}
 {_path:"snmp",count:4(uint64)}
