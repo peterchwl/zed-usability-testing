@@ -1,7 +1,10 @@
-FILE = "../DataSet/homogeneous.ndjson"; 
+HOMOGENEOUS_FILE = "../DataSet/NDJSON_FILES/homogeneous.ndjson"; 
+FILE = HOMOGENEOUS_FILE
 import json
 
 count=0
+thewritets = None
+theUID = None
 #Verify SQ 1 : Retrieve "ts": "2018-03-24T17:15:21.196410Z" 
 print("\nSQ1")
 with open(FILE) as f:
@@ -10,6 +13,21 @@ with open(FILE) as f:
         #print(record)
         if (record.get("ts") == "2018-03-24T17:15:21.196410Z"):
             print(record)
+            theUID = record.get("uid")
+            thewritets = record.get("_write_ts")
+#verify the queries match up with what Siya got as a result of search1.txt
+if (FILE==HOMOGENEOUS_FILE):
+    if (thewritets!="2018-03-24T17:15:21.276985Z"):
+        print("Issue with writets. SQ 1 is wrong")
+    if (theUID!="Ckl6kc1XUrdoN3f8K5"):
+        print("Issue with uid. SQ 1 is wrong")
+#if heterogeneous, then there should be no results found
+else:
+    if (thewritets is not None):
+        print("Issue with writets. SQ 1 is wrong")
+    if (theUID is not None):
+        print("Issue with UID. SQ 1 is wrong")
+
 
 #Verify AQ2: list the number of different types by _path
 print("\nAQ2")
