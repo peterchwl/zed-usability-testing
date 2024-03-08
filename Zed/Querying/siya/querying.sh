@@ -32,11 +32,11 @@ zed query -z 'typeof(this)==<http>' > "query_results"/$typeoffile"geneous_result
 echo "Search query 3"
 zed query -z '10.47.5.155' > "query_results"/$typeoffile"geneous_results/search3.ndjson"
 
-echo "Analytical Query 1" #may need to possibly change 
-zed query -z 'by _path' > "query_results"/$typeoffile"geneous_results/analytical1.txt"
+echo "Analytical Query 1" 
+zed query -z 'typeof(this) | sort | uniq' > "query_results"/$typeoffile"geneous_results/analytical1.txt"
 
-echo "Analytical Query 2" #may need to possibly change 
-zed query -z 'count(_path) by _path' > "query_results"/$typeoffile"geneous_results/analytical2.txt"
+echo "Analytical Query 2" 
+zed query -z 'count() by typeof(this) | sort | uniq' > "query_results"/$typeoffile"geneous_results/analytical2.txt"
 
 echo "Analytical Query 3"
 zed query -z 'avg(response_body_len)' > "query_results"/$typeoffile"geneous_results/analytical3.txt"
