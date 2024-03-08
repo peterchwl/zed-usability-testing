@@ -30,7 +30,7 @@ echo "Search query 2" #may need to possibly change
 zed query -z 'typeof(this)==<http>' > "query_results"/$typeoffile"geneous_results/search2.ndjson"
 
 echo "Search query 3"
-zed query -z 'id.orig_h==10.47.5.155' > "query_results"/$typeoffile"geneous_results/search3.ndjson"
+zed query -z '10.47.5.155' > "query_results"/$typeoffile"geneous_results/search3.ndjson"
 
 echo "Analytical Query 1" #may need to possibly change 
 zed query -z 'by _path' > "query_results"/$typeoffile"geneous_results/analytical1.txt"
