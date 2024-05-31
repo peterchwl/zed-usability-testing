@@ -6,7 +6,7 @@
 This is how the directory is broken up 
 ```bash
 ├── DATASETS
-│   ├── NDJSON_FILES
+│   ├── <span style="color:blue">some *blue* text</span>.NDJSON_FILES 
 │   │   ├── heterogeneous_half.ndjson
 │   │   ├── heterogeneous.ndjson
 │   │   ├── homogeneous_half.ndjson
