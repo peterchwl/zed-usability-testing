@@ -6,14 +6,17 @@
 This is how the directory is broken up 
 ```bash
 ├── DATASETS
-│   ├── NDJSON
-│   │   ├── **/*.css
-│   ├── ZED
-│   ├── images
-│   ├── index.html
-│   ├── js
-│   │   ├── **/*.js
-│   └── partials/template
+│   ├──NDJSON_FILES : Contains our original dataset in the form of either NDJSON or Zed files. We will ingest this data into the other data models. 
+│   │   ├── heterogeneous_half.ndjson
+│   │   ├── heterogeneous.ndjson
+│   │   ├── homogeneous_half.ndjson
+│   │   ├── homogeneous.ndjson
+│   ├── ZED_FILES
+│   │   ├── heterogeneous_half.ndjson
+│   │   ├── heterogeneous.ndjson
+│   │   ├── homogeneous_half.ndjson
+│   │   ├── homogeneous.ndjson
+│   ├── make-datasets.py : This is the code we used to separate our dataset into its halves and save it into the respective folder.
 ├── SQLite3
 │   ├── Ingestion
 │   │   ├── brandon
@@ -22,13 +25,13 @@ This is how the directory is broken up
 │   │   ├── siya
 │   ├── Querying
 │   │   ├── brandon
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── peter
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── ruiping
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── siya
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 ├── AsterixDB
 │   ├── Ingestion
 │   │   ├── brandon
@@ -37,13 +40,13 @@ This is how the directory is broken up
 │   │   ├── siya
 │   ├── Querying
 │   │   ├── brandon
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── peter
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── ruiping
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── siya
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 ├── JSON
 │   ├── Ingestion
 │   │   ├── brandon
@@ -52,13 +55,13 @@ This is how the directory is broken up
 │   │   ├── siya
 │   ├── Querying
 │   │   ├── brandon
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── peter
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── ruiping
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── siya
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 ├── Zed
 │   ├── Ingestion
 │   │   ├── brandon
@@ -67,12 +70,12 @@ This is how the directory is broken up
 │   │   ├── siya
 │   ├── Querying
 │   │   ├── brandon
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── peter
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── ruiping
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── siya
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 └── .gitignore
 ```
