@@ -6,7 +6,7 @@
 This is how the directory is broken up 
 ```bash
 ├── DATASETS
-│   ├── <span style="color:blue">some *blue* text</span>.NDJSON_FILES 
+│   ├──NDJSON_FILES : Contains our original dataset in the form of either NDJSON or Zed files. We will ingest this data into the other data models. 
 │   │   ├── heterogeneous_half.ndjson
 │   │   ├── heterogeneous.ndjson
 │   │   ├── homogeneous_half.ndjson
@@ -16,7 +16,7 @@ This is how the directory is broken up
 │   │   ├── heterogeneous.ndjson
 │   │   ├── homogeneous_half.ndjson
 │   │   ├── homogeneous.ndjson
-│   ├── make-datasets.py
+│   ├── make-datasets.py : This is the code we used to separate our dataset into its halves and save it into the respective folder.
 ├── SQLite3
 │   ├── Ingestion
 │   │   ├── brandon
