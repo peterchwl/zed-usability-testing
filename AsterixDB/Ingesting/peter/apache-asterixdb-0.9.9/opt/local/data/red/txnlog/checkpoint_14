@@ -1,0 +1,1 @@
+{"@type":"Checkpoint","@version":1,"@class":"org.apache.asterix.common.transactions.Checkpoint","id":14,"checkpointLsn":3758163344,"minMCTFirstLsn":-1,"maxTxnId":2692,"sharp":true,"storageVersion":12}

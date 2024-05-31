@@ -1,0 +1,684 @@
+13:19:01.164 [ShutdownHook-ClusterControllerService] INFO  org.apache.hyracks.control.common.ControllerShutdownHook - Shutdown hook called
+13:19:01.216 [ShutdownHook-ClusterControllerService] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Stopping ClusterControllerService
+13:19:01.217 [ShutdownHook-ClusterControllerService] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Stopping Asterix cluster controller
+13:19:01.236 [ShutdownHook-ClusterControllerService] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - updating cluster state from UNUSABLE to SHUTTING_DOWN
+13:19:01.239 [ShutdownHook-ClusterControllerService] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Cluster State is now SHUTTING_DOWN
+13:19:01.245 [ActiveNotificationHandler] WARN  org.apache.hyracks.api.util.SingleThreadEventProcessor - Stopped ActiveNotificationHandler
+13:19:01.253 [ShutdownHook-ClusterControllerService] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Unbound
+--------------------------
+Tue May 21 14:30:50 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:30:50.986 [main] WARN  org.apache.hyracks.control.cc.CCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/cc.log
+14:30:51.015 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Starting ClusterControllerService: org.apache.hyracks.control.cc.ClusterControllerService@5c530d1e
+14:30:51.135 [main] INFO  org.apache.asterix.hyracks.bootstrap.ApplicationConfigurator - Found JRE version 17.0.4.1
+14:30:51.162 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.hyracks log level to INFO
+14:30:51.162 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.asterix log level to INFO
+14:30:51.164 [main] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Starting Asterix cluster controller
+14:30:51.355 [ActiveNotificationHandler] INFO  org.apache.hyracks.api.util.SingleThreadEventProcessor - Started ActiveNotificationHandler
+14:30:51.393 [main] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Bound
+14:30:51.408 [main] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - Starting cluster event handler
+14:30:51.410 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Started ClusterControllerService
+14:30:51.410 [main] INFO  org.apache.hyracks.util.ExitUtil - successfully registered shutdown hook Thread[ShutdownHook-ClusterControllerService,5,main]
+14:30:51.410 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc1' at 127.0.0.1:9090
+14:30:51.411 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc2' at 127.0.0.1:9091
+14:30:52.371 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc2
+14:30:52.376 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc2
+14:30:52.376 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:30:52.376 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:30:52.377 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc2
+14:30:52.377 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 joined
+14:30:52.377 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc2
+14:30:52.378 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc1
+14:30:52.380 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc1
+14:30:52.380 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:30:52.380 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:30:52.381 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc1
+14:30:52.381 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 joined
+14:30:52.381 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc1
+14:30:52.408 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.util.MXHelper - Failed setting up the methods to get the number of file descriptors through com.sun.management.internal.OperatingSystemImpl
+java.lang.reflect.InaccessibleObjectException: Unable to make public long com.sun.management.internal.OperatingSystemImpl.getOpenFileDescriptorCount() accessible: module jdk.management does not "opens com.sun.management.internal" to unnamed module @4bd4bcd4
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.apache.hyracks.util.MXHelper.<clinit>(MXHelper.java:55) [hyracks-util-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.heartbeat.HeartbeatData.<init>(HeartbeatData.java:60) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$NodeHeartbeatFunction.deserialize(CCNCFunctions.java:428) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserialize(CCNCFunctions.java:1549) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserializeObject(CCNCFunctions.java:1458) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.Message.read(Message.java:117) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCHandle.processIncomingMessages(IPCHandle.java:169) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.read(IPCConnectionManager.java:440) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:261) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:30:52.773 [Executor-4:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=HEALTHY, nodeId='asterix_nc2', nodeStatus=IDLE, activePartitions=[1]}
+14:30:52.773 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=CORRUPTED, nodeId='asterix_nc1', nodeStatus=IDLE, activePartitions=[0]}
+14:30:52.775 [Executor-5:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc1 with status IDLE and system state: CORRUPTED and active partitions [0]
+14:30:52.775 [Executor-4:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc2 with status IDLE and system state: HEALTHY and active partitions [1]
+14:30:52.858 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc2', success=false, exception=java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh", localCounters=null, activePartitions=[1]}
+14:30:52.861 [Executor-5:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc2 failed to complete startup
+java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:30:52.871 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc1', success=false, exception=java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset", localCounters=null, activePartitions=[0]}
+14:30:52.871 [Executor-5:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc1 failed to complete startup
+java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:30:54.954 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc2
+14:30:54.965 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc1
+14:31:51.166 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc2 to shutdown to ensure failure
+14:31:51.166 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc2 considered dead. Last heartbeat received 58308ms ago. Max miss period: 50000ms
+14:31:51.167 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc1 considered dead. Last heartbeat received 58297ms ago. Max miss period: 50000ms
+14:31:51.167 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 left
+14:31:51.167 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc1
+14:31:51.168 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc1 to shutdown to ensure failure
+14:31:51.172 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:59327 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:31:51.172 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:59328 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:31:51.199 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:31:51.200 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59328
+14:31:51.200 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:31:51.200 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59327
+14:31:51.201 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:31:51.201 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 left
+14:31:51.201 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc2
+14:31:51.201 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:31:51.201 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:59327 failed; retrying (retry attempt 1 of 1) after 100ms
+14:31:51.201 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:59328 failed; retrying (retry attempt 1 of 1) after 100ms
+14:31:51.316 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:31:51.323 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59327
+14:31:51.323 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:31:51.324 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59328
+14:34:43.254 [HttpExecutor(port:19002)-13] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc1 from hcc
+14:34:43.255 [HttpExecutor(port:19002)-13] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc2 from hcc
+14:34:43.255 [HttpExecutor(port:19002)-13] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - updating cluster state from UNUSABLE to SHUTTING_DOWN
+14:34:43.255 [HttpExecutor(port:19002)-13] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Cluster State is now SHUTTING_DOWN
+14:34:43.258 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.work.ClusterShutdownWork - Waiting for NCs to shutdown...
+14:34:43.259 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc1' at 127.0.0.1:9090
+14:34:43.259 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc2' at 127.0.0.1:9091
+14:34:43.260 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Stopping ClusterControllerService
+14:34:43.260 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Stopping Asterix cluster controller
+14:34:43.260 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of SHUTTING_DOWN
+14:34:43.260 [ActiveNotificationHandler] WARN  org.apache.hyracks.api.util.SingleThreadEventProcessor - Stopped ActiveNotificationHandler
+14:34:43.260 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Unbound
+14:34:47.452 [Executor-1:ClusterController] WARN  org.apache.hyracks.control.cc.result.ResultDirectoryService - Result cleaner thread interrupted, shutting down.
+14:34:47.453 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Stopped ClusterControllerService
+14:34:47.453 [ShutdownWatchdog] INFO  org.apache.hyracks.util.ExitUtil - starting shutdown watchdog- system will halt if shutdown is not completed within 600 seconds
+14:34:47.453 [JVM exit thread] WARN  org.apache.hyracks.util.ExitUtil - JVM exiting with status 0; bye!
+java.lang.Throwable: exit callstack
+	at org.apache.hyracks.util.ExitUtil.exit(ExitUtil.java:92) ~[hyracks-util-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.cc.work.ClusterShutdownWork.lambda$doRun$0(ClusterShutdownWork.java:90) ~[hyracks-control-cc-0.3.9.jar:0.3.9]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[?:?]
+14:34:47.454 [ShutdownHook-ClusterControllerService] INFO  org.apache.hyracks.control.common.ControllerShutdownHook - Shutdown hook called
+14:34:47.455 [ShutdownHook-ClusterControllerService] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Stopping ClusterControllerService
+14:34:47.455 [ShutdownHook-ClusterControllerService] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Stopping Asterix cluster controller
+14:34:47.455 [ShutdownHook-ClusterControllerService] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of SHUTTING_DOWN
+14:34:47.455 [ShutdownHook-ClusterControllerService] WARN  org.apache.hyracks.control.common.ControllerShutdownHook - Exception in executing shutdown hook
+java.rmi.NoSuchObjectException: object not exported
+	at java.rmi/sun.rmi.transport.ObjectTable.unexportObject(ObjectTable.java:152) ~[?:?]
+	at java.rmi/java.rmi.server.UnicastRemoteObject.unexportObject(UnicastRemoteObject.java:462) ~[?:?]
+	at org.apache.asterix.metadata.bootstrap.AsterixStateProxy.unregisterRemoteObject(AsterixStateProxy.java:56) ~[asterix-metadata-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.CCApplication.stop(CCApplication.java:291) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.cc.ClusterControllerService.stopApplication(ClusterControllerService.java:353) ~[hyracks-control-cc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.cc.ClusterControllerService.stop(ClusterControllerService.java:337) ~[hyracks-control-cc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ControllerShutdownHook.run(ControllerShutdownHook.java:51) [hyracks-control-common-0.3.9.jar:0.3.9]
+--------------------------
+Tue May 21 14:35:06 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:35:07.515 [main] WARN  org.apache.hyracks.control.cc.CCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/cc.log
+14:35:07.541 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Starting ClusterControllerService: org.apache.hyracks.control.cc.ClusterControllerService@6c25e6c4
+14:35:07.647 [main] INFO  org.apache.asterix.hyracks.bootstrap.ApplicationConfigurator - Found JRE version 17.0.4.1
+14:35:07.669 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.hyracks log level to INFO
+14:35:07.669 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.asterix log level to INFO
+14:35:07.671 [main] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Starting Asterix cluster controller
+14:35:07.855 [ActiveNotificationHandler] INFO  org.apache.hyracks.api.util.SingleThreadEventProcessor - Started ActiveNotificationHandler
+14:35:07.867 [main] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Bound
+14:35:07.880 [main] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - Starting cluster event handler
+14:35:07.883 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Started ClusterControllerService
+14:35:07.883 [main] INFO  org.apache.hyracks.util.ExitUtil - successfully registered shutdown hook Thread[ShutdownHook-ClusterControllerService,5,main]
+14:35:07.884 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc1' at 127.0.0.1:9090
+14:35:07.884 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc2' at 127.0.0.1:9091
+14:35:08.828 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc2
+14:35:08.833 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc2
+14:35:08.833 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:35:08.833 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:35:08.834 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc2
+14:35:08.834 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 joined
+14:35:08.834 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc2
+14:35:08.835 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc1
+14:35:08.837 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc1
+14:35:08.837 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:35:08.837 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:35:08.837 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc1
+14:35:08.837 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 joined
+14:35:08.837 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc1
+14:35:08.868 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.util.MXHelper - Failed setting up the methods to get the number of file descriptors through com.sun.management.internal.OperatingSystemImpl
+java.lang.reflect.InaccessibleObjectException: Unable to make public long com.sun.management.internal.OperatingSystemImpl.getOpenFileDescriptorCount() accessible: module jdk.management does not "opens com.sun.management.internal" to unnamed module @4bd4bcd4
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.apache.hyracks.util.MXHelper.<clinit>(MXHelper.java:55) [hyracks-util-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.heartbeat.HeartbeatData.<init>(HeartbeatData.java:60) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$NodeHeartbeatFunction.deserialize(CCNCFunctions.java:428) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserialize(CCNCFunctions.java:1549) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserializeObject(CCNCFunctions.java:1458) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.Message.read(Message.java:117) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCHandle.processIncomingMessages(IPCHandle.java:169) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.read(IPCConnectionManager.java:440) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:261) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:35:09.224 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=HEALTHY, nodeId='asterix_nc2', nodeStatus=IDLE, activePartitions=[1]}
+14:35:09.224 [Executor-4:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=CORRUPTED, nodeId='asterix_nc1', nodeStatus=IDLE, activePartitions=[0]}
+14:35:09.227 [Executor-5:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc2 with status IDLE and system state: HEALTHY and active partitions [1]
+14:35:09.227 [Executor-4:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc1 with status IDLE and system state: CORRUPTED and active partitions [0]
+14:35:09.312 [Executor-4:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc2', success=false, exception=java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh", localCounters=null, activePartitions=[1]}
+14:35:09.315 [Executor-4:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc2 failed to complete startup
+java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:35:09.324 [Executor-4:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc1', success=false, exception=java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset", localCounters=null, activePartitions=[0]}
+14:35:09.324 [Executor-4:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc1 failed to complete startup
+java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:35:11.406 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc2
+14:35:11.419 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc1
+14:36:07.672 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc2 considered dead. Last heartbeat received 58359ms ago. Max miss period: 50000ms
+14:36:07.672 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc2 to shutdown to ensure failure
+14:36:07.674 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc1 to shutdown to ensure failure
+14:36:07.674 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc1 considered dead. Last heartbeat received 58350ms ago. Max miss period: 50000ms
+14:36:07.674 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 left
+14:36:07.674 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc1
+14:36:07.675 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:59571 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:36:07.675 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:59570 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:36:07.677 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:36:07.678 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59571
+14:36:07.678 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:36:07.678 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59570
+14:36:07.680 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:36:07.680 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 left
+14:36:07.680 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc2
+14:36:07.681 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:36:07.681 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:59570 failed; retrying (retry attempt 1 of 1) after 100ms
+14:36:07.681 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:59571 failed; retrying (retry attempt 1 of 1) after 100ms
+14:36:07.793 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:36:07.794 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59570
+14:36:07.794 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:36:07.794 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59571
+14:36:19.098 [HttpExecutor(port:19002)-11] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc1 from hcc
+14:36:19.099 [HttpExecutor(port:19002)-11] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc2 from hcc
+14:36:19.099 [HttpExecutor(port:19002)-11] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - updating cluster state from UNUSABLE to SHUTTING_DOWN
+14:36:19.099 [HttpExecutor(port:19002)-11] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Cluster State is now SHUTTING_DOWN
+14:36:19.103 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.work.ClusterShutdownWork - Waiting for NCs to shutdown...
+14:36:19.104 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc1' at 127.0.0.1:9090
+14:36:19.104 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc2' at 127.0.0.1:9091
+14:36:19.105 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Stopping ClusterControllerService
+14:36:19.105 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Stopping Asterix cluster controller
+14:36:19.105 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of SHUTTING_DOWN
+14:36:19.105 [ActiveNotificationHandler] WARN  org.apache.hyracks.api.util.SingleThreadEventProcessor - Stopped ActiveNotificationHandler
+14:36:19.105 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Unbound
+--------------------------
+Tue May 21 14:37:09 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:37:09.628 [main] WARN  org.apache.hyracks.control.cc.CCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/cc.log
+14:37:09.665 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Starting ClusterControllerService: org.apache.hyracks.control.cc.ClusterControllerService@6c25e6c4
+14:37:09.772 [main] INFO  org.apache.asterix.hyracks.bootstrap.ApplicationConfigurator - Found JRE version 17.0.4.1
+14:37:09.798 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.hyracks log level to INFO
+14:37:09.798 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.asterix log level to INFO
+14:37:09.800 [main] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Starting Asterix cluster controller
+14:37:09.995 [ActiveNotificationHandler] INFO  org.apache.hyracks.api.util.SingleThreadEventProcessor - Started ActiveNotificationHandler
+14:37:10.009 [main] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Bound
+14:37:10.023 [main] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - Starting cluster event handler
+14:37:10.026 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Started ClusterControllerService
+14:37:10.026 [main] INFO  org.apache.hyracks.util.ExitUtil - successfully registered shutdown hook Thread[ShutdownHook-ClusterControllerService,5,main]
+14:37:10.026 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc2' at 127.0.0.1:9091
+14:37:10.026 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc1' at 127.0.0.1:9090
+14:37:10.971 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc1
+14:37:10.975 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc1
+14:37:10.975 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:37:10.975 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:37:10.976 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc1
+14:37:10.976 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 joined
+14:37:10.976 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc1
+14:37:10.977 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc2
+14:37:10.979 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc2
+14:37:10.979 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:37:10.980 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:37:10.980 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc2
+14:37:10.980 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 joined
+14:37:10.980 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc2
+14:37:11.006 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.util.MXHelper - Failed setting up the methods to get the number of file descriptors through com.sun.management.internal.OperatingSystemImpl
+java.lang.reflect.InaccessibleObjectException: Unable to make public long com.sun.management.internal.OperatingSystemImpl.getOpenFileDescriptorCount() accessible: module jdk.management does not "opens com.sun.management.internal" to unnamed module @4bd4bcd4
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.apache.hyracks.util.MXHelper.<clinit>(MXHelper.java:55) [hyracks-util-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.heartbeat.HeartbeatData.<init>(HeartbeatData.java:60) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$NodeHeartbeatFunction.deserialize(CCNCFunctions.java:428) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserialize(CCNCFunctions.java:1549) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserializeObject(CCNCFunctions.java:1458) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.Message.read(Message.java:117) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCHandle.processIncomingMessages(IPCHandle.java:169) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.read(IPCConnectionManager.java:440) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:261) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:37:11.372 [Executor-4:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=HEALTHY, nodeId='asterix_nc2', nodeStatus=IDLE, activePartitions=[1]}
+14:37:11.372 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=CORRUPTED, nodeId='asterix_nc1', nodeStatus=IDLE, activePartitions=[0]}
+14:37:11.374 [Executor-5:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc1 with status IDLE and system state: CORRUPTED and active partitions [0]
+14:37:11.374 [Executor-4:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc2 with status IDLE and system state: HEALTHY and active partitions [1]
+14:37:11.460 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc2', success=false, exception=java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh", localCounters=null, activePartitions=[1]}
+14:37:11.462 [Executor-5:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc2 failed to complete startup
+java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:37:11.470 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc1', success=false, exception=java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset", localCounters=null, activePartitions=[0]}
+14:37:11.470 [Executor-5:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc1 failed to complete startup
+java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:37:13.556 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc2
+14:37:13.585 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc1
+14:38:09.790 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc1 to shutdown to ensure failure
+14:38:09.791 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc1 considered dead. Last heartbeat received 58320ms ago. Max miss period: 50000ms
+14:38:09.792 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc2 considered dead. Last heartbeat received 58334ms ago. Max miss period: 50000ms
+14:38:09.792 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 left
+14:38:09.792 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc1
+14:38:09.792 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:59791 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:38:09.793 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc2 to shutdown to ensure failure
+14:38:09.793 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:59790 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:38:09.795 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:38:09.796 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59791
+14:38:09.801 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:59791 failed; retrying (retry attempt 1 of 1) after 100ms
+14:38:09.802 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:38:09.803 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59790
+14:38:09.806 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:38:09.807 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 left
+14:38:09.807 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc2
+14:38:09.807 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:38:09.807 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:59790 failed; retrying (retry attempt 1 of 1) after 100ms
+14:38:09.905 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:38:09.906 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59791
+14:38:09.911 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:38:09.912 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:59790
+14:39:37.638 [HttpExecutor(port:19001)-7] ERROR org.apache.asterix - The MetadataNode failed to bind before the configured timeout (60 seconds); the MetadataNode was configured to run on NC: asterix_nc1
+org.apache.hyracks.api.exceptions.HyracksDataException: The MetadataNode failed to bind before the configured timeout (60 seconds); the MetadataNode was configured to run on NC: asterix_nc1
+	at org.apache.asterix.metadata.MetadataManager$CCMetadataManagerImpl.init(MetadataManager.java:1391) ~[asterix-metadata-0.9.9.jar:0.9.9]
+	at org.apache.asterix.api.http.server.ApiServlet.post(ApiServlet.java:147) [asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.http.server.AbstractServlet.handle(AbstractServlet.java:94) [hyracks-http-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.http.server.HttpRequestHandler.handle(HttpRequestHandler.java:83) [hyracks-http-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.http.server.HttpRequestHandler.call(HttpRequestHandler.java:68) [hyracks-http-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.http.server.HttpRequestHandler.call(HttpRequestHandler.java:37) [hyracks-http-0.3.9.jar:0.3.9]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:40:37.642 [HttpExecutor(port:19001)-5] ERROR org.apache.asterix - The MetadataNode failed to bind before the configured timeout (60 seconds); the MetadataNode was configured to run on NC: asterix_nc1
+org.apache.hyracks.api.exceptions.HyracksDataException: The MetadataNode failed to bind before the configured timeout (60 seconds); the MetadataNode was configured to run on NC: asterix_nc1
+	at org.apache.asterix.metadata.MetadataManager$CCMetadataManagerImpl.init(MetadataManager.java:1391) ~[asterix-metadata-0.9.9.jar:0.9.9]
+	at org.apache.asterix.api.http.server.ApiServlet.post(ApiServlet.java:147) [asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.http.server.AbstractServlet.handle(AbstractServlet.java:94) [hyracks-http-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.http.server.HttpRequestHandler.handle(HttpRequestHandler.java:83) [hyracks-http-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.http.server.HttpRequestHandler.call(HttpRequestHandler.java:68) [hyracks-http-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.http.server.HttpRequestHandler.call(HttpRequestHandler.java:37) [hyracks-http-0.3.9.jar:0.3.9]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:40:40.551 [HttpExecutor(port:19002)-14] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc1 from hcc
+14:40:40.551 [HttpExecutor(port:19002)-14] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc2 from hcc
+14:40:40.552 [HttpExecutor(port:19002)-14] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - updating cluster state from UNUSABLE to SHUTTING_DOWN
+14:40:40.552 [HttpExecutor(port:19002)-14] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Cluster State is now SHUTTING_DOWN
+14:40:40.555 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.work.ClusterShutdownWork - Waiting for NCs to shutdown...
+14:40:40.556 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc1' at 127.0.0.1:9090
+14:40:40.556 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc2' at 127.0.0.1:9091
+14:40:40.557 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Stopping ClusterControllerService
+14:40:40.557 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Stopping Asterix cluster controller
+14:40:40.557 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of SHUTTING_DOWN
+14:40:40.557 [ActiveNotificationHandler] WARN  org.apache.hyracks.api.util.SingleThreadEventProcessor - Stopped ActiveNotificationHandler
+14:40:40.557 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Unbound
+--------------------------
+Tue May 21 14:41:23 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:41:23.661 [main] WARN  org.apache.hyracks.control.cc.CCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/cc.log
+14:41:23.687 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Starting ClusterControllerService: org.apache.hyracks.control.cc.ClusterControllerService@6c25e6c4
+14:41:23.794 [main] INFO  org.apache.asterix.hyracks.bootstrap.ApplicationConfigurator - Found JRE version 17.0.4.1
+14:41:23.818 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.hyracks log level to INFO
+14:41:23.819 [main] INFO  org.apache.hyracks.util.LoggingConfigUtil - Setting org.apache.asterix log level to INFO
+14:41:23.820 [main] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Starting Asterix cluster controller
+14:41:23.993 [ActiveNotificationHandler] INFO  org.apache.hyracks.api.util.SingleThreadEventProcessor - Started ActiveNotificationHandler
+14:41:24.006 [main] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Bound
+14:41:24.018 [main] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - Starting cluster event handler
+14:41:24.021 [main] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Started ClusterControllerService
+14:41:24.021 [main] INFO  org.apache.hyracks.util.ExitUtil - successfully registered shutdown hook Thread[ShutdownHook-ClusterControllerService,5,main]
+14:41:24.021 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc1' at 127.0.0.1:9090
+14:41:24.021 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.work.TriggerNCWork - Connecting NC service 'asterix_nc2' at 127.0.0.1:9091
+14:41:24.974 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc1
+14:41:24.978 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc1
+14:41:24.979 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:41:24.979 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:41:24.979 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc1
+14:41:24.980 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 joined
+14:41:24.980 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc1
+14:41:24.981 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registering node: asterix_nc2
+14:41:24.983 [Worker:ClusterController] WARN  org.apache.hyracks.control.cc.cluster.NodeManager - +addNode: asterix_nc2
+14:41:24.983 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - adding node to registry
+14:41:24.983 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - updating cluster capacity
+14:41:24.983 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.RegisterNodeWork - registered node: asterix_nc2
+14:41:24.983 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 joined
+14:41:24.983 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Registering configuration parameters for node id asterix_nc2
+14:41:25.010 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.util.MXHelper - Failed setting up the methods to get the number of file descriptors through com.sun.management.internal.OperatingSystemImpl
+java.lang.reflect.InaccessibleObjectException: Unable to make public long com.sun.management.internal.OperatingSystemImpl.getOpenFileDescriptorCount() accessible: module jdk.management does not "opens com.sun.management.internal" to unnamed module @4bd4bcd4
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.apache.hyracks.util.MXHelper.<clinit>(MXHelper.java:55) [hyracks-util-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.heartbeat.HeartbeatData.<init>(HeartbeatData.java:60) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$NodeHeartbeatFunction.deserialize(CCNCFunctions.java:428) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserialize(CCNCFunctions.java:1549) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.control.common.ipc.CCNCFunctions$SerializerDeserializer.deserializeObject(CCNCFunctions.java:1458) [hyracks-control-common-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.Message.read(Message.java:117) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCHandle.processIncomingMessages(IPCHandle.java:169) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.read(IPCConnectionManager.java:440) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:261) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:41:25.367 [Executor-4:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=HEALTHY, nodeId='asterix_nc2', nodeStatus=IDLE, activePartitions=[1]}
+14:41:25.368 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: RegistrationTasksRequestMessage{state=CORRUPTED, nodeId='asterix_nc1', nodeStatus=IDLE, activePartitions=[0]}
+14:41:25.370 [Executor-4:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc2 with status IDLE and system state: HEALTHY and active partitions [1]
+14:41:25.370 [Executor-5:ClusterController] INFO  org.apache.asterix.app.replication.NcLifecycleCoordinator - Building registration tasks for node asterix_nc1 with status IDLE and system state: CORRUPTED and active partitions [0]
+14:41:25.456 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc2', success=false, exception=java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh", localCounters=null, activePartitions=[1]}
+14:41:25.459 [Executor-5:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc2 failed to complete startup
+java.lang.NumberFormatException: For input string: "1\Heterog\ssh\0\ssh"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:41:25.465 [Executor-5:ClusterController] INFO  org.apache.asterix.messaging.CCMessageBroker - Received message: NCLifecycleTaskReportMessage{nodeId='asterix_nc1', success=false, exception=java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset", localCounters=null, activePartitions=[0]}
+14:41:25.465 [Executor-5:ClusterController] ERROR org.apache.asterix.app.replication.NcLifecycleCoordinator - Node asterix_nc1 failed to complete startup
+java.lang.NumberFormatException: For input string: "0\Default\RdpDataset\0\RdpDataset"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:786) ~[?:?]
+	at org.apache.asterix.common.utils.StoragePathUtil.getPartitionNumFromRelativePath(StoragePathUtil.java:118) ~[asterix-common-0.9.9.jar:0.9.9]
+	at org.apache.asterix.hyracks.bootstrap.NCApplication.lambda$getFileDeviceResolver$0(NCApplication.java:362) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.hyracks.control.nc.io.IOManager.resolve(IOManager.java:431) ~[hyracks-control-nc-0.3.9.jar:0.3.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.getPartitionIndexes(PersistentLocalResourceRepository.java:470) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.transaction.management.resource.PersistentLocalResourceRepository.cleanup(PersistentLocalResourceRepository.java:565) ~[asterix-transactions-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.nc.task.LocalStorageCleanupTask.perform(LocalStorageCleanupTask.java:54) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.app.replication.message.RegistrationTasksResponseMessage.handle(RegistrationTasksResponseMessage.java:63) ~[asterix-app-0.9.9.jar:0.9.9]
+	at org.apache.asterix.messaging.NCMessageBroker.lambda$receivedMessage$0(NCMessageBroker.java:108) ~[asterix-app-0.9.9.jar:0.9.9]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+14:41:27.536 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc2
+14:41:27.552 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.NotifyShutdownWork - Received unsolicted shutdown notification from node asterix_nc1
+14:42:23.813 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc1 considered dead. Last heartbeat received 58347ms ago. Max miss period: 50000ms
+14:42:23.813 [Executor-5:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc1 to shutdown to ensure failure
+14:42:23.814 [Executor-4:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - Requesting node asterix_nc2 to shutdown to ensure failure
+14:42:23.822 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.cluster.NodeManager - asterix_nc2 considered dead. Last heartbeat received 58360ms ago. Max miss period: 50000ms
+14:42:23.822 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc1 left
+14:42:23.822 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc1
+14:42:23.823 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:60150 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:42:23.823 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.ReconnectingIPCHandle - ipcHandle IPCHandle [addr=/127.0.0.1:60149 state=CLOSED] disconnected; will attempt to reconnect 1 times
+14:42:23.824 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:42:23.824 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:60150
+14:42:23.824 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:42:23.825 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:60149
+14:42:23.825 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:42:23.825 [Worker:ClusterController] INFO  org.apache.asterix.hyracks.bootstrap.ClusterLifecycleListener - NC: asterix_nc2 left
+14:42:23.825 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Removing configuration parameters for node id asterix_nc2
+14:42:23.826 [Worker:ClusterController] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of UNUSABLE
+14:42:23.826 [Executor-4:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:60150 failed; retrying (retry attempt 1 of 1) after 100ms
+14:42:23.826 [Executor-5:ClusterController] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Connection to /127.0.0.1:60149 failed; retrying (retry attempt 1 of 1) after 100ms
+14:42:23.941 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:42:23.949 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:60150
+14:42:23.949 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Exception finishing connect
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.finishConnect(IPCConnectionManager.java:278) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.processSelectedKeys(IPCConnectionManager.java:268) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.doRun(IPCConnectionManager.java:231) [hyracks-ipc-0.3.9.jar:0.3.9]
+	at org.apache.hyracks.ipc.impl.IPCConnectionManager$NetworkThread.run(IPCConnectionManager.java:213) [hyracks-ipc-0.3.9.jar:0.3.9]
+14:42:23.952 [IPC Network Listener Thread [/127.0.0.1:1099]] WARN  org.apache.hyracks.ipc.impl.IPCConnectionManager - Failed to finish connect to /127.0.0.1:60149
+14:45:37.316 [HttpExecutor(port:19002)-14] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc1 from hcc
+14:45:37.317 [HttpExecutor(port:19002)-14] WARN  org.apache.asterix.api.http.server.ShutdownApiServlet - Unable to get node details for asterix_nc2 from hcc
+14:45:37.317 [HttpExecutor(port:19002)-14] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - updating cluster state from UNUSABLE to SHUTTING_DOWN
+14:45:37.317 [HttpExecutor(port:19002)-14] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - Cluster State is now SHUTTING_DOWN
+14:45:37.320 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.work.ClusterShutdownWork - Waiting for NCs to shutdown...
+14:45:37.321 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc1' at 127.0.0.1:9090
+14:45:37.321 [Worker:ClusterController] INFO  org.apache.hyracks.control.cc.work.ShutdownNCServiceWork - Connecting to NC service 'asterix_nc2' at 127.0.0.1:9091
+14:45:37.321 [ClusterShutdownWork-Helper] INFO  org.apache.hyracks.control.cc.ClusterControllerService - Stopping ClusterControllerService
+14:45:37.321 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.hyracks.bootstrap.CCApplication - Stopping Asterix cluster controller
+14:45:37.321 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.runtime.utils.ClusterStateManager - ignoring update to same cluster state of SHUTTING_DOWN
+14:45:37.322 [ActiveNotificationHandler] WARN  org.apache.hyracks.api.util.SingleThreadEventProcessor - Stopped ActiveNotificationHandler
+14:45:37.322 [ClusterShutdownWork-Helper] INFO  org.apache.asterix.metadata.bootstrap.AsterixStateProxy - Asterix Distributed State Proxy Unbound

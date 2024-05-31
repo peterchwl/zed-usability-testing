@@ -1,0 +1,218 @@
+-------------------------- 
+Thu 05/09/2024 19:22:03.33 
+-------------------------- 
+^C^C-------------------------- 
+Thu 05/09/2024 19:34:39.03 
+-------------------------- 
+-------------------------- 
+Sun 05/12/2024 12:20:49.38 
+-------------------------- 
+^C-------------------------- 
+Sun 05/12/2024 12:23:00.57 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^C-------------------------- 
+Sun 05/12/2024 14:50:47.68 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^C-------------------------- 
+Sun 05/12/2024 15:16:35.81 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^C-------------------------- 
+Sun 05/12/2024 21:54:09.40 
+-------------------------- 
+^C-------------------------- 
+Sun 05/12/2024 21:55:44.44 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^C-------------------------- 
+Sun 05/12/2024 22:14:00.82 
+-------------------------- 
+-------------------------- 
+Mon 05/13/2024 22:37:04.93 
+-------------------------- 
+-------------------------- 
+Mon 05/13/2024 23:16:22.26 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^CTerminate batch job (Y/N)? -------------------------- 
+Tue 05/14/2024  1:14:03.83 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^C-------------------------- 
+Tue 05/14/2024 14:16:44.88 
+-------------------------- 
+^C^CTerminate batch job (Y/N)? -------------------------- 
+Tue 05/14/2024 14:54:41.82 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^C-------------------------- 
+Tue 05/14/2024 15:48:14.93 
+-------------------------- 
+^CTerminate batch job (Y/N)? ^C-------------------------- 
+Tue 05/14/2024 16:32:45.62 
+-------------------------- 
+-------------------------- 
+Tue 05/14/2024 21:13:25.41 
+-------------------------- 
+-------------------------- 
+Wed 05/15/2024 15:08:16.89 
+-------------------------- 
+^C--------------------------
+Thu May 16 16:28:43 PDT 2024
+--------------------------
+./start-sample-cluster.sh: line 129: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/bin/asterixncservice: Permission denied
+--------------------------
+Thu May 16 16:29:32 PDT 2024
+--------------------------
+./start-sample-cluster.sh: line 129: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/bin/asterixncservice: Permission denied
+--------------------------
+Thu May 16 16:32:56 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+16:32:57.557 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+--------------------------
+Thu May 16 16:33:10 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+Exception in thread "main" java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.Net.bind(Net.java:544)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+	at org.apache.hyracks.control.nc.service.NCService.main(NCService.java:297)
+16:33:11.815 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+16:33:11.815 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+16:33:11.815 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+16:33:12.417 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+16:33:15.864 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+16:33:15.866 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+--------------------------
+Thu May 16 16:34:12 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+16:34:13.326 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+16:34:13.779 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+16:34:13.779 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+16:34:13.779 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+16:34:14.286 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+16:34:17.723 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+16:34:17.726 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+16:36:39.047 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Terminating NCService based on command from CC
+16:36:39.048 [main] INFO  org.apache.hyracks.control.nc.service.NCService - JVM Exiting.. Bye!
+--------------------------
+Thu May 16 16:36:46 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+16:36:47.287 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+16:36:47.753 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+16:36:47.754 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+16:36:47.754 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+16:36:48.287 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+16:36:51.710 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+16:36:51.712 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+--------------------------
+Thu May 16 16:45:44 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+Exception in thread "main" java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.Net.bind(Net.java:544)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+	at org.apache.hyracks.control.nc.service.NCService.main(NCService.java:297)
+--------------------------
+Thu May 16 16:46:43 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+Exception in thread "main" java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.Net.bind(Net.java:544)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+	at org.apache.hyracks.control.nc.service.NCService.main(NCService.java:297)
+16:46:44.866 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+16:46:44.867 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+16:46:44.867 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+16:46:45.353 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+16:46:48.786 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+16:46:48.786 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+--------------------------
+Thu May 16 16:47:09 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+Exception in thread "main" java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.Net.bind(Net.java:544)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+	at org.apache.hyracks.control.nc.service.NCService.main(NCService.java:297)
+16:47:10.453 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+16:47:10.453 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+16:47:10.454 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+16:47:10.983 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+16:47:14.393 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+16:47:14.394 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+--------------------------
+Tue May 21 14:30:50 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:30:50.924 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:30:51.443 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+14:30:51.444 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+14:30:51.444 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+14:30:51.971 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+14:30:55.384 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+14:30:55.388 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:34:43.261 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Terminating NCService based on command from CC
+14:34:43.262 [main] INFO  org.apache.hyracks.control.nc.service.NCService - JVM Exiting.. Bye!
+--------------------------
+Tue May 21 14:35:06 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:35:07.457 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:35:07.910 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+14:35:07.911 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+14:35:07.911 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+14:35:08.430 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+14:35:11.833 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+14:35:11.836 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:36:19.104 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Terminating NCService based on command from CC
+14:36:19.105 [main] INFO  org.apache.hyracks.control.nc.service.NCService - JVM Exiting.. Bye!
+--------------------------
+Tue May 21 14:37:09 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:37:09.564 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:37:10.054 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+14:37:10.055 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+14:37:10.055 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+14:37:10.559 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+14:37:13.978 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+14:37:13.981 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:40:40.557 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Terminating NCService based on command from CC
+14:40:40.558 [main] INFO  org.apache.hyracks.control.nc.service.NCService - JVM Exiting.. Bye!
+--------------------------
+Tue May 21 14:41:23 PDT 2024
+--------------------------
+Using Java version: 17.0.4.1
+14:41:23.600 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:41:24.048 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+14:41:24.049 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx9831m
+14:41:24.049 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+Using Java version: 17.0.4.1
+14:41:24.562 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /Users/peterlee/Documents/cs/python/ZED/asterixdb/apache-asterixdb-0.9.9/opt/local/logs/nc-asterix_nc1.log
+14:41:27.947 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 2
+14:41:27.949 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+14:45:37.322 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Terminating NCService based on command from CC
+14:45:37.324 [main] INFO  org.apache.hyracks.control.nc.service.NCService - JVM Exiting.. Bye!
