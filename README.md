@@ -5,22 +5,74 @@
 
 This is how the directory is broken up 
 ```bash
-├── app
-│   ├── css
+├── DATASETS
+│   ├── NDJSON
 │   │   ├── **/*.css
-│   ├── favicon.ico
+│   ├── ZED
 │   ├── images
 │   ├── index.html
 │   ├── js
 │   │   ├── **/*.js
 │   └── partials/template
-├── dist (or build)
-├── node_modules
-├── bower_components (if using bower)
-├── test
-├── Gruntfile.js/gulpfile.js
-├── README.md
-├── package.json
-├── bower.json (if using bower)
+├── SQLite3
+│   ├── Ingestion
+│   │   ├── brandon
+│   │   ├── peter
+│   │   ├── ruiping
+│   │   ├── siya
+│   ├── Querying
+│   │   ├── brandon
+|   │   │   ├── query_results.zip
+│   │   ├── peter
+|   │   │   ├── query_results.zip
+│   │   ├── ruiping
+|   │   │   ├── query_results.zip
+│   │   ├── siya
+|   │   │   ├── query_results.zip
+├── AsterixDB
+│   ├── Ingestion
+│   │   ├── brandon
+│   │   ├── peter
+│   │   ├── ruiping
+│   │   ├── siya
+│   ├── Querying
+│   │   ├── brandon
+|   │   │   ├── query_results.zip
+│   │   ├── peter
+|   │   │   ├── query_results.zip
+│   │   ├── ruiping
+|   │   │   ├── query_results.zip
+│   │   ├── siya
+|   │   │   ├── query_results.zip
+├── JSON
+│   ├── Ingestion
+│   │   ├── brandon
+│   │   ├── peter
+│   │   ├── ruiping
+│   │   ├── siya
+│   ├── Querying
+│   │   ├── brandon
+|   │   │   ├── query_results.zip
+│   │   ├── peter
+|   │   │   ├── query_results.zip
+│   │   ├── ruiping
+|   │   │   ├── query_results.zip
+│   │   ├── siya
+|   │   │   ├── query_results.zip
+├── Zed
+│   ├── Ingestion
+│   │   ├── brandon
+│   │   ├── peter
+│   │   ├── ruiping
+│   │   ├── siya
+│   ├── Querying
+│   │   ├── brandon
+|   │   │   ├── query_results.zip
+│   │   ├── peter
+|   │   │   ├── query_results.zip
+│   │   ├── ruiping
+|   │   │   ├── query_results.zip
+│   │   ├── siya
+|   │   │   ├── query_results.zip
 └── .gitignore
 ```
