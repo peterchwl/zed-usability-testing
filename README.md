@@ -6,14 +6,17 @@
 This is how the directory is broken up 
 ```bash
 ├── DATASETS
-│   ├── NDJSON
-│   │   ├── **/*.css
-│   ├── ZED
-│   ├── images
-│   ├── index.html
-│   ├── js
-│   │   ├── **/*.js
-│   └── partials/template
+│   ├── NDJSON_FILES
+│   │   ├── heterogeneous_half.ndjson
+│   │   ├── heterogeneous.ndjson
+│   │   ├── homogeneous_half.ndjson
+│   │   ├── homogeneous.ndjson
+│   ├── ZED_FILES
+│   │   ├── heterogeneous_half.ndjson
+│   │   ├── heterogeneous.ndjson
+│   │   ├── homogeneous_half.ndjson
+│   │   ├── homogeneous.ndjson
+│   ├── make-datasets.py
 ├── SQLite3
 │   ├── Ingestion
 │   │   ├── brandon
