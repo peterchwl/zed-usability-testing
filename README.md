@@ -22,13 +22,13 @@ This is how the directory is broken up
 │   │   ├── siya
 │   ├── Querying
 │   │   ├── brandon
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── peter
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── ruiping
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 │   │   ├── siya
-|   │   │   ├── query_results.zip
+│   │   │   ├── query_results.zip
 ├── AsterixDB
 │   ├── Ingestion
 │   │   ├── brandon
