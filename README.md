@@ -5,13 +5,13 @@
 
 This is how the directory is broken up 
 ```bash
-├── DATASETS
-│   ├──NDJSON_FILES : Contains our original dataset in the form of either NDJSON or Zed files. We will ingest this data into the other data models. 
+├── DATASETS : Contains our original dataset in the form of either NDJSON or Zed files. We will ingest this data into the other data models.
+│   ├──NDJSON_DATA
 │   │   ├── heterogeneous_half.ndjson
 │   │   ├── heterogeneous.ndjson
 │   │   ├── homogeneous_half.ndjson
 │   │   ├── homogeneous.ndjson
-│   ├── ZED_FILES
+│   ├── ZED_DATA
 │   │   ├── heterogeneous_half.ndjson
 │   │   ├── heterogeneous.ndjson
 │   │   ├── homogeneous_half.ndjson
