@@ -1,0 +1,742 @@
+DROP DATAVERSE Heterog IF EXISTS;
+CREATE DATAVERSE Heterog;
+USE Heterog;
+
+
+CREATE TYPE conn AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`proto`: string?,
+`duration`: double?,
+`orig_bytes`: int?,
+`resp_bytes`: int?,
+`conn_state`: string?,
+`missed_bytes`: int?,
+`history`: string?,
+`orig_pkts`: int?,
+`orig_ip_bytes`: int?,
+`resp_pkts`: int?,
+`resp_ip_bytes`: int?,
+`service`: string?
+};
+
+CREATE TYPE dce_rpc AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`rtt`: double?,
+`named_pipe`: string?,
+`endpoint`: string?,
+`operation`: string?
+};
+
+CREATE TYPE dns AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`proto`: string?,
+`trans_id`: int?,
+`rtt`: double?,
+`query`: string?,
+`qclass`: int?,
+`qclass_name`: string?,
+`qtype`: int?,
+`qtype_name`: string?,
+`rcode`: int?,
+`rcode_name`: string?,
+`AA`: boolean?,
+`TC`: boolean?,
+`RD`: boolean?,
+`RA`: boolean?,
+`Z`: int?,
+`answers`: string?,
+`TTLs`: string?,
+`rejected`: boolean?
+};
+
+CREATE TYPE dpd AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`proto`: string?,
+`analyzer`: string?,
+`failure_reason`: string?
+};
+
+CREATE TYPE files AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`fuid`: string?,
+`tx_hosts`: string?,
+`rx_hosts`: string?,
+`conn_uids`: string?,
+`source`: string?,
+`depth`: int?,
+`analyzers`: string?,
+`mime_type`: string?,
+`duration`: double?,
+`is_orig`: boolean?,
+`seen_bytes`: int?,
+`missing_bytes`: int?,
+`overflow_bytes`: int?,
+`timedout`: boolean?,
+`md5`: string?,
+`sha1`: string?,
+`total_bytes`: int?,
+`filename`: string?
+};
+
+CREATE TYPE ftp AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`user`: string?,
+`password`: string?,
+`command`: string?,
+`reply_code`: int?,
+`reply_msg`: string?,
+`data_channel.passive`: boolean?,
+`data_channel.orig_h`: string?,
+`data_channel.resp_h`: string?,
+`data_channel.resp_p`: int?,
+`arg`: string?
+};
+
+CREATE TYPE http AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`trans_depth`: int?,
+`method`: string?,
+`host`: string?,
+`uri`: string?,
+`version`: string?,
+`user_agent`: string?,
+`request_body_len`: int?,
+`response_body_len`: int?,
+`status_code`: int?,
+`status_msg`: string?,
+`tags`: string?,
+`resp_fuids`: string?,
+`resp_mime_types`: string?,
+`referrer`: string?,
+`orig_fuids`: string?,
+`orig_mime_types`: string?,
+`origin`: string?,
+`username`: string?,
+`resp_filenames`: string?
+};
+
+CREATE TYPE kerberos AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`request_type`: string?,
+`client`: string?,
+`service`: string?,
+`till`: string?,
+`forwardable`: boolean?,
+`renewable`: boolean?
+};
+
+CREATE TYPE modbus AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`func`: string?
+};
+
+CREATE TYPE notice AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`fuid`: string?,
+`proto`: string?,
+`note`: string?,
+`msg`: string?,
+`sub`: string?,
+`src`: string?,
+`dst`: string?,
+`p`: int?,
+`actions`: string?,
+`suppress_for`: double?
+};
+
+CREATE TYPE ntlm AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`server_nb_computer_name`: string?,
+`server_dns_computer_name`: string?,
+`server_tree_name`: string?,
+`success`: boolean?,
+`username`: string?,
+`hostname`: string?,
+`domainname`: string?
+};
+
+CREATE TYPE ntp AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`version`: int?,
+`mode`: int?,
+`stratum`: int?,
+`poll`: double?,
+`precision`: double?,
+`root_delay`: double?,
+`root_disp`: double?,
+`ref_id`: string?,
+`ref_time`: string?,
+`org_time`: string?,
+`rec_time`: string?,
+`xmt_time`: string?,
+`num_exts`: int?
+};
+
+CREATE TYPE pe AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`id`: string?,
+`machine`: string?,
+`compile_ts`: string?,
+`os`: string?,
+`subsystem`: string?,
+`is_exe`: boolean?,
+`is_64bit`: boolean?,
+`uses_aslr`: boolean?,
+`uses_dep`: boolean?,
+`uses_code_integrity`: boolean?,
+`uses_seh`: boolean?,
+`has_import_table`: boolean?,
+`has_export_table`: boolean?,
+`has_cert_table`: boolean?,
+`has_debug_data`: boolean?,
+`section_names`: string?
+};
+
+CREATE TYPE rdp AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`result`: string?,
+`security_protocol`: string?,
+`cert_count`: int?,
+`cert_type`: string?,
+`cert_permanent`: boolean?,
+`encryption_level`: string?,
+`encryption_method`: string?,
+`cookie`: string?,
+`client_channels`: string?,
+`keyboard_layout`: string?,
+`client_build`: string?,
+`client_name`: string?,
+`client_dig_product_id`: string?,
+`desktop_width`: int?,
+`desktop_height`: int?,
+`requested_color_depth`: string?
+};
+
+CREATE TYPE smb_files AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`action`: string?,
+`name`: string?,
+`size`: int?
+};
+
+CREATE TYPE smb_mapping AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`path`: string?,
+`service`: string?,
+`share_type`: string?,
+`native_file_system`: string?
+};
+
+CREATE TYPE smtp AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`trans_depth`: int?,
+`helo`: string?,
+`last_reply`: string?,
+`path`: string?,
+`tls`: boolean?,
+`fuids`: string?,
+`is_webmail`: boolean?
+};
+
+CREATE TYPE snmp AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`duration`: double?,
+`version`: string?,
+`community`: string?,
+`get_requests`: int?,
+`get_bulk_requests`: int?,
+`get_responses`: int?,
+`set_requests`: int?
+};
+
+CREATE TYPE ssh AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`version`: int?,
+`auth_attempts`: int?,
+`client`: string?,
+`server`: string?
+};
+
+CREATE TYPE ssl AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`version`: string?,
+`cipher`: string?,
+`curve`: string?,
+`resumed`: boolean?,
+`established`: boolean?,
+`cert_chain_fuids`: string?,
+`client_cert_chain_fuids`: string?,
+`subject`: string?,
+`issuer`: string?,
+`validation_status`: string?,
+`server_name`: string?,
+`next_protocol`: string?,
+`last_alert`: string?,
+`client_subject`: string?,
+`client_issuer`: string?
+};
+
+CREATE TYPE syslog AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`proto`: string?,
+`facility`: string?,
+`severity`: string?,
+`message`: string?
+};
+
+CREATE TYPE weird AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`name`: string?,
+`notice`: boolean?,
+`peer`: string?,
+`addl`: string?
+};
+
+CREATE TYPE x509 AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string,
+`id`: string?,
+`certificate.version`: int?,
+`certificate.serial`: string?,
+`certificate.subject`: string?,
+`certificate.issuer`: string?,
+`certificate.not_valid_before`: string?,
+`certificate.not_valid_after`: string?,
+`certificate.key_alg`: string?,
+`certificate.sig_alg`: string?,
+`certificate.key_type`: string?,
+`certificate.key_length`: int?,
+`certificate.exponent`: string?,
+`san.dns`: string?,
+`basic_constraints.ca`: boolean?,
+`san.ip`: string?,
+`certificate.curve`: string?,
+`san.email`: string?
+};
+
+CREATE TYPE new_table AS {
+`unique_id`: string,
+`_path`: string?,
+`_write_ts`: string?,
+`ts`: string?,
+`uid`: string?,
+`id.orig_h`: string?,
+`id.orig_p`: int?,
+`id.resp_h`: string?,
+`id.resp_p`: int?,
+`proto`: string?,
+`trans_id`: int?,
+`rtt`: double?,
+`query`: string?,
+`qclass`: int?,
+`qclass_name`: string?,
+`qtype`: int?,
+`qtype_name`: string?,
+`rcode`: int?,
+`rcode_name`: string?,
+`AA`: boolean?,
+`TC`: boolean?,
+`RD`: boolean?,
+`RA`: boolean?,
+`Z`: int?,
+`answers`: string?,
+`TTLs`: string?,
+`rejected`: boolean?,
+`named_pipe`: string?,
+`endpoint`: string?,
+`operation`: string?,
+`id`: string?,
+`certificate.version`: int?,
+`certificate.serial`: string?,
+`certificate.subject`: string?,
+`certificate.issuer`: string?,
+`certificate.not_valid_before`: string?,
+`certificate.not_valid_after`: string?,
+`certificate.key_alg`: string?,
+`certificate.sig_alg`: string?,
+`certificate.key_type`: string?,
+`certificate.key_length`: int?,
+`certificate.exponent`: string?,
+`san.dns`: string?,
+`basic_constraints.ca`: boolean?,
+`san.ip`: string?,
+`certificate.curve`: string?,
+`san.email`: string?,
+`action`: string?,
+`name`: string?,
+`size`: int?,
+`notice`: boolean?,
+`peer`: string?,
+`addl`: string?,
+`request_type`: string?,
+`client`: string?,
+`service`: string?,
+`till`: string?,
+`forwardable`: boolean?,
+`renewable`: boolean?,
+`version`: string?,
+`cipher`: string?,
+`curve`: string?,
+`resumed`: boolean?,
+`established`: boolean?,
+`cert_chain_fuids`: string?,
+`client_cert_chain_fuids`: string?,
+`subject`: string?,
+`issuer`: string?,
+`validation_status`: string?,
+`server_name`: string?,
+`next_protocol`: string?,
+`last_alert`: string?,
+`client_subject`: string?,
+`client_issuer`: string?,
+`duration`: double?,
+`orig_bytes`: int?,
+`resp_bytes`: int?,
+`conn_state`: string?,
+`missed_bytes`: int?,
+`history`: string?,
+`orig_pkts`: int?,
+`orig_ip_bytes`: int?,
+`resp_pkts`: int?,
+`resp_ip_bytes`: int?,
+`mode`: int?,
+`stratum`: int?,
+`poll`: double?,
+`precision`: double?,
+`root_delay`: double?,
+`root_disp`: double?,
+`ref_id`: string?,
+`ref_time`: string?,
+`org_time`: string?,
+`rec_time`: string?,
+`xmt_time`: string?,
+`num_exts`: int?,
+`func`: string?,
+`trans_depth`: int?,
+`method`: string?,
+`host`: string?,
+`uri`: string?,
+`user_agent`: string?,
+`request_body_len`: int?,
+`response_body_len`: int?,
+`status_code`: int?,
+`status_msg`: string?,
+`tags`: string?,
+`resp_fuids`: string?,
+`resp_mime_types`: string?,
+`referrer`: string?,
+`orig_fuids`: string?,
+`orig_mime_types`: string?,
+`origin`: string?,
+`username`: string?,
+`resp_filenames`: string?,
+`server_nb_computer_name`: string?,
+`server_dns_computer_name`: string?,
+`server_tree_name`: string?,
+`success`: boolean?,
+`hostname`: string?,
+`domainname`: string?,
+`facility`: string?,
+`severity`: string?,
+`message`: string?,
+`fuid`: string?,
+`tx_hosts`: string?,
+`rx_hosts`: string?,
+`conn_uids`: string?,
+`source`: string?,
+`depth`: int?,
+`analyzers`: string?,
+`mime_type`: string?,
+`is_orig`: boolean?,
+`seen_bytes`: int?,
+`missing_bytes`: int?,
+`overflow_bytes`: int?,
+`timedout`: boolean?,
+`md5`: string?,
+`sha1`: string?,
+`total_bytes`: int?,
+`filename`: string?,
+`analyzer`: string?,
+`failure_reason`: string?,
+`auth_attempts`: int?,
+`server`: string?,
+`user`: string?,
+`password`: string?,
+`command`: string?,
+`reply_code`: int?,
+`reply_msg`: string?,
+`data_channel.passive`: boolean?,
+`data_channel.orig_h`: string?,
+`data_channel.resp_h`: string?,
+`data_channel.resp_p`: int?,
+`arg`: string?,
+`note`: string?,
+`msg`: string?,
+`sub`: string?,
+`src`: string?,
+`dst`: string?,
+`p`: int?,
+`actions`: string?,
+`suppress_for`: double?,
+`machine`: string?,
+`compile_ts`: string?,
+`os`: string?,
+`subsystem`: string?,
+`is_exe`: boolean?,
+`is_64bit`: boolean?,
+`uses_aslr`: boolean?,
+`uses_dep`: boolean?,
+`uses_code_integrity`: boolean?,
+`uses_seh`: boolean?,
+`has_import_table`: boolean?,
+`has_export_table`: boolean?,
+`has_cert_table`: boolean?,
+`has_debug_data`: boolean?,
+`section_names`: string?,
+`result`: string?,
+`security_protocol`: string?,
+`cert_count`: int?,
+`cert_type`: string?,
+`cert_permanent`: boolean?,
+`encryption_level`: string?,
+`encryption_method`: string?,
+`cookie`: string?,
+`client_channels`: string?,
+`keyboard_layout`: string?,
+`client_build`: string?,
+`client_name`: string?,
+`client_dig_product_id`: string?,
+`desktop_width`: int?,
+`desktop_height`: int?,
+`requested_color_depth`: string?,
+`helo`: string?,
+`last_reply`: string?,
+`path`: string?,
+`tls`: boolean?,
+`version_int`: int?,
+`fuids`: string?,
+`is_webmail`: boolean?,
+`community`: string?,
+`get_requests`: int?,
+`get_bulk_requests`: int?,
+`get_responses`: int?,
+`set_requests`: int?,
+`share_type`: string?,
+`native_file_system`: string?
+};
+
+CREATE DATASET conn(conn) PRIMARY KEY `unique_id`;
+
+CREATE DATASET dce_rpc(dce_rpc) PRIMARY KEY `unique_id`;
+
+CREATE DATASET dns(dns) PRIMARY KEY `unique_id`;
+
+CREATE DATASET dpd(dpd) PRIMARY KEY `unique_id`;
+
+CREATE DATASET files(files) PRIMARY KEY `unique_id`;
+
+CREATE DATASET ftp(ftp) PRIMARY KEY `unique_id`;
+
+CREATE DATASET http(http) PRIMARY KEY `unique_id`;
+
+CREATE DATASET kerberos(kerberos) PRIMARY KEY `unique_id`;
+
+CREATE DATASET modbus(modbus) PRIMARY KEY `unique_id`;
+
+CREATE DATASET notice(notice) PRIMARY KEY `unique_id`;
+
+CREATE DATASET ntlm(ntlm) PRIMARY KEY `unique_id`;
+
+CREATE DATASET ntp(ntp) PRIMARY KEY `unique_id`;
+
+CREATE DATASET pe(pe) PRIMARY KEY `unique_id`;
+
+CREATE DATASET rdp(rdp) PRIMARY KEY `unique_id`;
+
+CREATE DATASET smb_files(smb_files) PRIMARY KEY `unique_id`;
+
+CREATE DATASET smb_mapping(smb_mapping) PRIMARY KEY `unique_id`;
+
+CREATE DATASET smtp(smtp) PRIMARY KEY `unique_id`;
+
+CREATE DATASET snmp(snmp) PRIMARY KEY `unique_id`;
+
+CREATE DATASET ssh(ssh) PRIMARY KEY `unique_id`;
+
+CREATE DATASET ssl(ssl) PRIMARY KEY `unique_id`;
+
+CREATE DATASET syslog(syslog) PRIMARY KEY `unique_id`;
+
+CREATE DATASET weird(weird) PRIMARY KEY `unique_id`;
+
+CREATE DATASET x509(x509) PRIMARY KEY `unique_id`;
+
+create dataset new_table(new_table) PRIMARY KEY `unique_id`;
