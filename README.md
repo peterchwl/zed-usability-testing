@@ -3,8 +3,12 @@
 ### by Brandon Panuco, Peter Lee, Ruiping Fang, Siya Kamboj
 ### Advised by Professor Ousterhout
 
-This is how the directory is broken up 
-```bash
+Statement of Research: https://docs.google.com/document/d/1912CkoPGAOaLGWRwpE6kEqFS71FA3dD3_cs0WnFB4t0/edit?usp=sharing
+
+Documentation: https://docs.google.com/document/d/1qwhfSx-PWFFQyLb90sgwGxYoLw_F6_-HLOG5riZQlKo/edit?usp=sharing
+
+This is how the directory is broken up:
+```md
 ├── DATASETS : Contains our original dataset in the form of either NDJSON or Zed files. We will ingest this data into the other data models.
 │   ├──NDJSON_DATA
 │   │   ├── heterogeneous_half.ndjson
