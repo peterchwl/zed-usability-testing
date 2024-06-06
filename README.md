@@ -3,7 +3,7 @@
 ### by Brandon Panuco, Peter Lee, Ruiping Fang, Siya Kamboj
 ### Advised by Professor Ousterhout
 
-Poster: https://drive.google.com/file/d/1pO-9AnysEtoyEqOzYwL4dseNC7EGfDtF/view?usp=sharing
+Poster: https://drive.google.com/file/d/17ushNm-lAFBvZiGtFMGdoHgUIWbw9oGM/view?usp=sharing
 
 Statement of Research: https://docs.google.com/document/d/1912CkoPGAOaLGWRwpE6kEqFS71FA3dD3_cs0WnFB4t0/edit?usp=sharing
 
