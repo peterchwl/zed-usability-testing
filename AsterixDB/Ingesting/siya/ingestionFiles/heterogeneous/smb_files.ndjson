@@ -1,0 +1,2 @@
+{"_path": "smb_files", "_write_ts": "2018-03-24T17:22:44.906992Z", "ts": "2018-03-24T17:22:44.906293Z", "uid": "Cv9qKsDHo7ivuJBSl", "id.orig_h": "10.150.0.20", "id.orig_p": 43414, "id.resp_h": "10.47.24.25", "id.resp_p": 445, "action": "SMB::FILE_OPEN", "name": "\\svcctl", "size": 0}
+{"_path": "smb_files", "_write_ts": "2018-03-24T17:30:34.060212Z", "ts": "2018-03-24T17:30:34.059338Z", "uid": "CEyOGk2Tc29ak66Ku2", "id.orig_h": "10.128.0.214", "id.orig_p": 37373, "id.resp_h": "10.47.8.19", "id.resp_p": 445, "action": "SMB::FILE_OPEN", "name": "\\svcctl", "size": 0}

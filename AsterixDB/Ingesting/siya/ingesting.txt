@@ -1,0 +1,118 @@
+DROP DATAVERSE Heterog;
+CREATE DATAVERSE Heterog;
+USE Heterog;
+CREATE TYPE x509 AS{
+ _path:string?
+};
+create external dataset x509 (x509)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/x509.ndjson"), ("format"="json") );
+CREATE TYPE conn AS{
+ _path:string?
+};
+create external dataset conn (conn)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/conn.ndjson"), ("format"="json") );
+CREATE TYPE dce_rpc AS{
+ _path:string?
+};
+create external dataset dce_rpc (dce_rpc)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/dce_rpc.ndjson"), ("format"="json") );
+CREATE TYPE dns AS{
+ _path:string?
+};
+create external dataset dns (dns)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/dns.ndjson"), ("format"="json") );
+CREATE TYPE dpd AS{
+ _path:string?
+};
+create external dataset dpd (dpd)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/dpd.ndjson"), ("format"="json") );
+CREATE TYPE files AS{
+ _path:string?
+};
+create external dataset files (files)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/files.ndjson"), ("format"="json") );
+CREATE TYPE ftp AS{
+ _path:string?
+};
+create external dataset ftp (ftp)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/ftp.ndjson"), ("format"="json") );
+CREATE TYPE http AS{
+ _path:string?
+};
+create external dataset http (http)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/http.ndjson"), ("format"="json") );
+CREATE TYPE kerberos AS{
+ _path:string?
+};
+create external dataset kerberos (kerberos)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/kerberos.ndjson"), ("format"="json") );
+CREATE TYPE modbus AS{
+ _path:string?
+};
+create external dataset modbus (modbus)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/modbus.ndjson"), ("format"="json") );
+CREATE TYPE notice AS{
+ _path:string?
+};
+create external dataset notice (notice)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/notice.ndjson"), ("format"="json") );
+CREATE TYPE ntlm AS{
+ _path:string?
+};
+create external dataset ntlm (ntlm)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/ntlm.ndjson"), ("format"="json") );
+CREATE TYPE ntp AS{
+ _path:string?
+};
+create external dataset ntp (ntp)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/ntp.ndjson"), ("format"="json") );
+CREATE TYPE pe AS{
+ _path:string?
+};
+create external dataset pe (pe)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/pe.ndjson"), ("format"="json") );
+CREATE TYPE rdp AS{
+ _path:string?
+};
+create external dataset rdp (rdp)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/rdp.ndjson"), ("format"="json") );
+CREATE TYPE smb_files AS{
+ _path:string?
+};
+create external dataset smb_files (smb_files)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/smb_files.ndjson"), ("format"="json") );
+CREATE TYPE smb_mapping AS{
+ _path:string?
+};
+create external dataset smb_mapping (smb_mapping)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/smb_mapping.ndjson"), ("format"="json") );
+CREATE TYPE smtp AS{
+ _path:string?
+};
+create external dataset smtp (smtp)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/smtp.ndjson"), ("format"="json") );
+CREATE TYPE snmp AS{
+ _path:string?
+};
+create external dataset snmp (snmp)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/snmp.ndjson"), ("format"="json") );
+CREATE TYPE ssh AS{
+ _path:string?
+};
+create external dataset ssh (ssh)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/ssh.ndjson"), ("format"="json") );
+CREATE TYPE ssl AS{
+ _path:string?
+};
+create external dataset ssl (ssl)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/ssl.ndjson"), ("format"="json") );
+CREATE TYPE syslog AS{
+ _path:string?
+};
+create external dataset syslog (syslog)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/syslog.ndjson"), ("format"="json") );
+CREATE TYPE weird AS{
+ _path:string?
+};
+create external dataset weird (weird)
+ using localfs( ("path"="127.0.0.1:///Users/skamboj2022/Downloads/ERSP/zed-usability-testing/Hybrid/siya/AsterixDB/ingestionFiles/heterogeneous/weird.ndjson"), ("format"="json") );
